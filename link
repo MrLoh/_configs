@@ -1,3 +1,0 @@
-rm ~/.gitconfig
-ln -s ~/configs/.gitconfig ~/
-
