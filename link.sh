@@ -12,7 +12,7 @@ rm ~/.config/fish/config.fish
 ln -s ~/configs/fishconfig ~/.config/fish/config.fish
 
 rm -rf ~/.config/fish/functions
-ln ~/configs/fishfunctions ~/.config/fish/functions
+ln -s ~/configs/fishfunctions ~/.config/fish/functions
 
 # bash
 rm ~/.bashrc
