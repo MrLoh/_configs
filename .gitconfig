@@ -1,0 +1,57 @@
+[user]
+	name = MrLoh
+	email = flojoto@hotmail.com
+[credential]
+	helper = osxkeychain
+[alias]
+	s = status -s
+	graph = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold yellow)%h%C(reset): %C(green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(blue)%d%C(reset)' --all
+	g = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold yellow)%h%C(reset): %C(green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(blue)%d%C(reset)' --all
+	l = log -10 --abbrev-commit --decorate --date=relative --format=format:'%C(bold yellow)%h%C(reset): %C(green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(blue)%d%C(reset)' --all
+	aa = add -A
+	ca = commit -am
+	co = checkout
+	amend = commit --amend
+	switch = !legit switch \"$@\"
+	branches = !legit branches
+	sprout = !legit sprout \"$@\"
+	unpublish = !legit unpublish \"$@\"
+	harvest = !legit harvest \"$@\"
+	sync = !legit sync \"$@\"
+	publish = !legit publish \"$@\"
+	graft = !legit graft \"$@\"
+[core]
+	editor = nano
+	excludesfile = /Users/tolo/.gitignore_global
+	autocrlf = input
+[push]
+	default = simple
+[diff]
+    tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[mergetool "Kaleidoscope"]
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+  trustExitCode = true
+[filter "media"]
+	clean = git media clean %f
+	smudge = git media smudge %f
+	required = true
+[merge]
+	tool = ksdiff
+[mergetool "ksdiff"]
+	cmd = ksdiff \\\"$BASE\\\" \\\"$LOCAL\\\" \\\"$REMOTE\\\" \\\"$MERGED\\\"
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[pull]
+	rebase = true
+[rerere]
+	enabled = true
+[color]
+	ui = true
