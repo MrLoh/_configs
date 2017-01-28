@@ -22,11 +22,8 @@ set -gx RBENV_ROOT /usr/local/var/rbenv
 . (rbenv init -|psub)
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
 
-# set dinghy environment variables for Docker
-set -x DOCKER_HOST tcp://192.168.99.100:2376
-set -x DOCKER_CERT_PATH /Users/tolo/.docker/machine/machines/dinghy
-set -x DOCKER_MACHINE_NAME dinghy
-set -x DOCKER_TLS_VERIFY 1
-
 # disable .pyc files
 set -x PYTHONDONTWRITEBYTECODE 1
+
+# create hub alias
+eval (hub alias -s)
