@@ -9,6 +9,7 @@
 	g = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold yellow)%h%C(reset): %C(green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(blue)%d%C(reset)' --all
 	l = log -10 --abbrev-commit --decorate --date=relative --format=format:'%C(bold yellow)%h%C(reset): %C(green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(blue)%d%C(reset)' --all
 	aa = add -A
+	c = commit -m
 	ca = commit -am
 	co = checkout
 	amend = commit --amend
