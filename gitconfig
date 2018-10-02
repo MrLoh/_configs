@@ -21,6 +21,7 @@
 	sync = !legit sync \"$@\"
 	publish = !legit publish \"$@\"
 	graft = !legit graft \"$@\"
+	forcepush = push --force-with-lease
 [core]
 	editor = nano
 	excludesfile = /Users/tolo/.gitignore_global
@@ -47,9 +48,10 @@
 	smudge = git hawser smudge %f
 	required = true
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
+	process = git-lfs filter-process
 	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
 [pull]
 	rebase = true
 [rerere]

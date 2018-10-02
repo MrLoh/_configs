@@ -1,8 +1,17 @@
 # Path to your oh-my-fish.
 set fish_path $HOME/.oh-my-fish
 
+# add pip3 packages to path
+set PATH /Library/Frameworks/Python.framework/Versions/3.5/bin $PATH
+
 # add node modules to path
 set PATH ~/.npm-packages/bin $PATH
+
+# add android device manager
+set ANDROID_HOME ~/Library/Android/sdk
+set PATH ~/Library/Android/sdk/platform-tools/ $PATH
+set PATH ~/Library/Android/sdk/tools/ $PATH
+set PATH ~/Library/Android/sdk/emulator $PATH
 
 # Theme
 set fish_theme robbyrussell
@@ -27,3 +36,8 @@ set -x PYTHONDONTWRITEBYTECODE 1
 
 # create hub alias
 eval (hub alias -s)
+
+# promt options
+set -g theme_newline_cursor yes
+set -g theme_date_format "+%a %H:%M"
+set -g theme_color_scheme terminal
