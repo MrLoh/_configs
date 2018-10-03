@@ -1491,7 +1491,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>715 50 445 320 0 0 1920 1200 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>193 581 770 429 0 0 1920 1200 </string>
+	<string>192 499 918 512 0 0 1920 1200 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 890 1178 0 0 1920 1200 </string>
 	<key>New Bookmarks</key>
@@ -4754,7 +4754,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/tolo</string>
+			<string>/Users/tolo/Repos</string>
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>
@@ -5755,7 +5755,7 @@
 	<key>UseLionStyleFullscreen</key>
 	<true/>
 	<key>UseMetal</key>
-	<false/>
+	<true/>
 	<key>Window Arrangements</key>
 	<dict>
 		<key>Cinuru</key>
