@@ -12,6 +12,7 @@
 	c = commit -m
 	ca = commit -am
 	co = checkout
+	pick = cherry-pick
 	amend = commit --amend
 	switch = !legit switch \"$@\"
 	branches = !legit branches
@@ -23,9 +24,10 @@
 	graft = !legit graft \"$@\"
 	forcepush = push --force-with-lease
 [core]
-	editor = nano
+	editor = code --wait
 	excludesfile = /Users/tolo/.gitignore_global
 	autocrlf = input
+	ignoreCase = false
 [push]
 	default = simple
 [diff]
