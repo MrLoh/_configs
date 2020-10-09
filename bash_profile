@@ -3,6 +3,8 @@
 export PATH="/usr/local/sbin:$PATH"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:/usr/local/bin/code # add code to PATH
+
 
 # add android SDK
 export ANDROID_HOME=$HOME/Library/Android/sdk
