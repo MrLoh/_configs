@@ -27,7 +27,7 @@
 	editor = code --wait
 	excludesfile = /Users/tolo/.gitignore_global
 	autocrlf = input
-	ignoreCase = false
+	ignorecase = false
 [push]
 	default = simple
 [diff]

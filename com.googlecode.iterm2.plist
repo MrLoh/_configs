@@ -2887,7 +2887,7 @@
 			<key>Rows</key>
 			<integer>30</integer>
 			<key>Screen</key>
-			<integer>2</integer>
+			<integer>1</integer>
 			<key>Scrollback Lines</key>
 			<integer>0</integer>
 			<key>Scrollback With Status Bar</key>
