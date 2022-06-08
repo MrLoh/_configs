@@ -1,16 +1,32 @@
-# my configs
+# @MrLoh Mac Config
 
-This Repo contains system wirde configuration files and scripts. It is based on the setup suggested in [this article](https://www.digitalocean.com/community/tutorials/how-to-use-git-to-manage-your-user-configuration-files-on-a-linux-vps#creating-a-configuration-directory-to-store-files).
+This Repo contains my system wide configuration files and scripts. It is based on the setup
+suggested in [this article][1].
 
-To create fresh symlinks of profiles in system run `./link.sh`. (This will remove overwrite existing profiles with these.)
+### Usage
 
-### Git
+1. Install [iTerm2](https://iterm2.com)
+2. Install [Homebrew](https://brew.sh)
+3. Create a Repos folder
+	- `mkdir ~/Repos && cd ~/Repos`
+4. install git and clone this repo: 
+	- `brew install git`
+	- `git clone https://github.com/MrLoh/configs.git`
+5. Create symlinks of profiles (!This will overwrite existing profiles)
+	- `./link.sh`
+6. Install [Operator Mono Lig](https://github.com/kiliman/operator-mono-lig) fonts
+7. Load iTerm preferences from `~/Repos/_config/`
+	![iTerm Preferences > General > Preferences](./ressources/iterm_load_prefs.png)
+
+### Content
+
+This contains the following configs:
 - gitconfig
 - global gitignore
-
-### Bash
 - bashrc
-
-### Fish
+- zshrc
 - fishconfig
 - fishfunctions
+
+
+[1]: https://www.digitalocean.com/community/tutorials/how-to-use-git-to-manage-your-user-configuration-files-on-a-linux-vps#creating-a-configuration-directory-to-store-files
