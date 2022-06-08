@@ -19,3 +19,6 @@ rm -f ~/.bashrc
 rm -f ~/.bash_profile
 ln -s $PWD/bash_profile ~/.bash_profile
 
+# zsh
+rm -f ~/.zshrc
+ln -s $PWD/zshrc ~/.zshrc

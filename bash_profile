@@ -1,10 +1,10 @@
 [[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
 
-export PATH="/usr/local/sbin:$PATH"
+export PATH=$PATH:/usr/local/sbin
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-PATH=$PATH:/usr/local/bin/code # add code to PATH
-
+# use micro as editor
+export EDITOR=micro
+export VISUAL="$EDITOR"
 
 # add android SDK
 export ANDROID_HOME=$HOME/Library/Android/sdk
@@ -20,5 +20,4 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# added by Anaconda3 2.5.0 installer
-export PATH="/Users/tolo/anaconda/bin:$PATH"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
