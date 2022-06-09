@@ -5,17 +5,17 @@ suggested in [this article][1].
 
 ### Usage
 
-1. Install [iTerm2](https://iterm2.com)
-2. Install [Homebrew](https://brew.sh)
+1. Install [Homebrew](https://brew.sh)
+2. Install Dependencies from [Brewfile](./Brewfile)
+	- `brew bundle`
 3. Create a Repos folder
 	- `mkdir ~/Repos && cd ~/Repos`
-4. install git and clone this repo: 
-	- `brew install git`
+4. Clone this repo: 
 	- `git clone https://github.com/MrLoh/configs.git`
 5. Install [Operator Mono Lig](https://github.com/kiliman/operator-mono-lig) fonts
 6. Load iTerm preferences from `~/Repos/_config/`
 	![iTerm Preferences > General > Preferences](./ressources/iterm_load_prefs.png)
-7. Install and configure [Fish Shell](https://fishshell.com)
+7. Configure [Fish Shell](https://fishshell.com)
 	- `./fishsetup.sh`
 8. Create symlinks for profiles (!This will overwrite existing profiles)
 	- `./link.sh`
@@ -37,7 +37,6 @@ This contains the following configs:
 This helps setup the following tools:
 - iTerm
 - Homebrew
-- Git and Hub
 - Fish Shell
 - NVM for Fish
 

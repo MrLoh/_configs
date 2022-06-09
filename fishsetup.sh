@@ -1,5 +1,4 @@
-# install fish and start fish
-brew install fish
+# start fish
 fish
 
 # add homebrew to path
@@ -13,10 +12,6 @@ chsh -s (which fish)
 
 # install oh my fish (https://github.com/oh-my-fish/oh-my-fish)
 curl -L https://get.oh-my.fish | fish
-
-# install fish function dependencies
-brew install fzf
-brew install hub
 
 # install bob the fish theme https://github.com/oh-my-fish/theme-bobthefish
 omf install bobthefish
