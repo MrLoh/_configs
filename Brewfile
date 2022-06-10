@@ -1,7 +1,8 @@
+tap "buo/cask-upgrade"
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "homebrew/core"
-tap "buo/cask-upgrade"
 
 # Automatic configure script builder
 brew "autoconf"
@@ -45,6 +46,10 @@ brew "pyenv-virtualenv"
 brew "r"
 # Persistent key-value database, with built-in net interface
 brew "redis"
+# Login and retrieve AWS temporary credentials using a SAML IDP
+brew "saml2aws"
+# Version control system designed to be a better CVS
+brew "svn"
 # Anonymizing overlay network for TCP
 brew "tor"
 # CLI tool that moves files or folder to the trash
@@ -58,6 +63,8 @@ brew "zlib"
 
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
+# Command-line helper for the 1Password password manager
+cask "1password-cli"
 # Menu bar icon organizer
 cask "bartender"
 # Tool to customize input devices and automate computer systems
@@ -72,6 +79,11 @@ cask "firefox"
 cask "figma"
 # Desktop debugging platform for mobile developers
 cask "flipper"
+# Fonts
+cask "font-merriweather"
+cask "font-merriweather-sans"
+cask "font-open-sans"
+cask "font-source-sans-pro"
 # Web browser
 cask "google-chrome"
 # Terminal emulator as alternative to Apple's Terminal app
