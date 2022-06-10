@@ -8,10 +8,12 @@ tap "homebrew/core"
 brew "autoconf"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
-# GNU File, Shell, and Text utilities
-brew "coreutils"
 # Fish completion for brew-cask
 brew "brew-cask-completion"
+# CLI for managing secrets through AWS SSM Parameter Store
+brew "chamber"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
 # Collection of reusable C++ library artifacts developed at Facebook
 brew "folly"
 # User-friendly command-line shell for UNIX-like operating systems
@@ -49,7 +51,7 @@ brew "redis"
 # Login and retrieve AWS temporary credentials using a SAML IDP
 brew "saml2aws"
 # Version control system designed to be a better CVS
-brew "svn"
+brew "subversion"
 # Anonymizing overlay network for TCP
 brew "tor"
 # CLI tool that moves files or folder to the trash
@@ -71,12 +73,12 @@ cask "bartender"
 cask "bettertouchtool"
 # API documentation browser and code snippet manager
 cask "dash"
-# Pack, ship and run any application as a lightweight container
+# App to build and share containerized applications and microservices
 cask "docker"
-# Web browser
-cask "firefox"
 # Collaborative team software
 cask "figma"
+# Web browser
+cask "firefox"
 # Desktop debugging platform for mobile developers
 cask "flipper"
 # Fonts
@@ -105,6 +107,8 @@ cask "topnotch"
 # Open-source code editor
 cask "visual-studio-code"
 
+# 1Password Safari extension
+mas "1Password for Safari", id: 1569813296
 # Ad blocker
 mas "AdGuard for Safari", id: 1440147259
 # Browser management tool
