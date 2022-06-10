@@ -16,9 +16,11 @@ suggested in [this article][1].
 6. Load iTerm preferences from `~/Repos/_config/`
 	![iTerm Preferences > General > Preferences](./ressources/iterm_load_prefs.png)
 7. Configure [Fish Shell](https://fishshell.com)
-	- `./fishsetup.sh`
+	- `./setup.fish.sh`
 8. Create symlinks for profiles (!This will overwrite existing profiles)
 	- `./link.sh`
+9. Register R notebook kernel
+	- `Rscript ./setup.r`
 
 Since the configurations are now symlinked, any further changes can easily be committed to git and
 changes from other machines can easily be pulled down via git.
