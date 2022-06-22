@@ -18,3 +18,14 @@ omf install bobthefish
 
 # setup iTerm fish shell integration (https://iterm2.com/documentation-shell-integration.html)
 curl -L https://iterm2.com/shell_integration/fish -o iterm2_shell_integration.fish
+
+
+# install cocoa pods 
+sudo gem install cocoapods
+sudo arch -arm64 gem pristine ffi # TODO: check in future if this is still needed
+
+# install xcode command line tools
+xcode-select --install
+
+# use Xcode app instead of just command line tools
+sudo xcode-select -s /Applications/Xcode.app/Contents/Developer

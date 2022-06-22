@@ -12,6 +12,8 @@ brew "automake"
 brew "brew-cask-completion"
 # CLI for managing secrets through AWS SSM Parameter Store
 brew "chamber"
+# Dependency manager for Cocoa projects
+brew "cocoapods"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Collection of reusable C++ library artifacts developed at Facebook
@@ -88,6 +90,8 @@ cask "font-open-sans"
 cask "font-source-sans-pro"
 # Web browser
 cask "google-chrome"
+# Tool to optimize images to a smaller size
+cask "imageoptim"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Online collaborative whiteboard platform
