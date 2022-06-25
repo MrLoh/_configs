@@ -84,6 +84,12 @@ const NowLine = styled.hr((p) => ({
   borderRadius: 2,
 }));
 
+const EmptyDisclaimer = styled.p({
+  fontSize: 14,
+  fontWeight: 500,
+  opacity: 0.6,
+});
+
 const parseTime = (str) => {
   const today = new Date().toISOString().split('T')[0];
   return dayjs(`${today} ${str}`, 'YYYY-MM-DD HH:mm');
@@ -107,26 +113,34 @@ export const render = ({ output, error }) => {
     })
     .sort((a, b) => a.start > b.start);
 
-  const dayStart = dayjs(Math.min(parseTime('10:00'), events[0].start));
-  const dayEnd = dayjs(Math.max(parseTime('15:00'), events[events.length - 1].end));
-  const dayLength = dayEnd.diff(dayStart, 'minutes');
-
   return (
     <Container>
       <CalendarDate>{dayjs().format('ddd MMM DD')}</CalendarDate>
       {/* <pre>{output}</pre> */}
-      <EventsList>
-        {uniqBy(events, 'name').map(({ name, location, start, end, duration, calendar }) => (
-          <EventBox len={duration / dayLength} top={start.diff(dayStart, 'minutes') / dayLength}>
-            <Time>
-              {start?.format('HH:mm')}
-              {/* – {end?.format('HH:mm')} ({duration}m) */}
-            </Time>
-            <Title inline={duration < 20}>{name}</Title>
-          </EventBox>
-        ))}
-        <NowLine top={dayjs().diff(dayStart, 'minutes') / dayLength} />
-      </EventsList>
+      {events.length ? (
+        (() => {
+          const dayStart = dayjs(Math.min(parseTime('10:00'), events[0].start));
+          const dayEnd = dayjs(Math.max(parseTime('15:00'), events[events.length - 1].end));
+          const dayLength = dayEnd.diff(dayStart, 'minutes');
+          <EventsList>
+            {uniqBy(events, 'name').map(({ name, location, start, end, duration, calendar }) => (
+              <EventBox
+                len={duration / dayLength}
+                top={start.diff(dayStart, 'minutes') / dayLength}
+              >
+                <Time>
+                  {start?.format('HH:mm')}
+                  {/* – {end?.format('HH:mm')} ({duration}m) */}
+                </Time>
+                <Title inline={duration < 20}>{name}</Title>
+              </EventBox>
+            ))}
+            <NowLine top={dayjs().diff(dayStart, 'minutes') / dayLength} />
+          </EventsList>;
+        })()
+      ) : (
+        <EmptyDisclaimer>no events today</EmptyDisclaimer>
+      )}
     </Container>
   );
 };
