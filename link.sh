@@ -22,3 +22,6 @@ ln -s $PWD/bash_profile ~/.bash_profile
 # zsh
 rm -f ~/.zshrc
 ln -s $PWD/zshrc ~/.zshrc
+
+# übersicht
+ln -s $PWD/widgets/ ~/Library/Application\ Support/Übersicht/

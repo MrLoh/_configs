@@ -1,3 +1,4 @@
+tap "AlexanderWillner/tap"
 tap "buo/cask-upgrade"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -26,6 +27,8 @@ brew "fzf"
 brew "git"
 # Add GitHub support to git on the command-line
 brew "hub"
+# Get events and tasks from the macOS calendar database
+brew "ical-buddy"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # C library of Git core methods that is re-entrant and linkable
@@ -54,6 +57,8 @@ brew "redis"
 brew "saml2aws"
 # Version control system designed to be a better CVS
 brew "subversion"
+# Simple read-only comand-line interface to Things 3 database
+brew "things.sh"
 # Anonymizing overlay network for TCP
 brew "tor"
 # CLI tool that moves files or folder to the trash
@@ -108,6 +113,8 @@ cask "rstudio"
 cask "tableplus"
 # Utility to hide the notch
 cask "topnotch"
+# Run commands and display their output on the desktop
+cask "ubersicht"
 # Open-source code editor
 cask "visual-studio-code"
 
