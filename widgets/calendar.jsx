@@ -10,7 +10,6 @@ export const className = {
   top: 20,
   left: 50,
   height: 'calc(100vh - 300px)',
-  opacity: 0.75,
   overflow: 'hidden',
 };
 

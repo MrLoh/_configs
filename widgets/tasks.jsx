@@ -8,7 +8,6 @@ export const refreshFrequency = 10 * 60 * 1000;
 export const className = {
   bottom: 30,
   left: 50,
-  opacity: 0.75,
 };
 
 const baseViewStyle = {
