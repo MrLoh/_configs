@@ -61,6 +61,8 @@ brew "subversion"
 brew "things.sh"
 # Anonymizing overlay network for TCP
 brew "tor"
+# Helper application for Things
+cask "thingsmacsandboxhelper"
 # CLI tool that moves files or folder to the trash
 brew "trash"
 # Watch files and take action when they change
@@ -93,6 +95,7 @@ cask "font-merriweather"
 cask "font-merriweather-sans"
 cask "font-open-sans"
 cask "font-source-sans-pro"
+cask "font-roboto"
 # Web browser
 cask "google-chrome"
 # Tool to optimize images to a smaller size
