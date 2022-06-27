@@ -24,4 +24,6 @@ rm -f ~/.zshrc
 ln -s $PWD/zshrc ~/.zshrc
 
 # übersicht
+cd ./widgets && npm install && cd ..
+rm -rf ~/Library/Application\ Support/Übersicht/widgets
 ln -s $PWD/widgets/ ~/Library/Application\ Support/Übersicht/
