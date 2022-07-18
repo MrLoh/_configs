@@ -122,21 +122,23 @@ export const render = ({ output, error }) => {
           const dayStart = dayjs(Math.min(parseTime('10:00'), events[0].start));
           const dayEnd = dayjs(Math.max(parseTime('15:00'), events[events.length - 1].end));
           const dayLength = dayEnd.diff(dayStart, 'minutes');
-          <EventsList>
-            {uniqBy(events, 'name').map(({ name, location, start, end, duration, calendar }) => (
-              <EventBox
-                len={duration / dayLength}
-                top={start.diff(dayStart, 'minutes') / dayLength}
-              >
-                <Time>
-                  {start?.format('HH:mm')}
-                  {/* – {end?.format('HH:mm')} ({duration}m) */}
-                </Time>
-                <Title inline={duration < 20}>{name}</Title>
-              </EventBox>
-            ))}
-            <NowLine top={dayjs().diff(dayStart, 'minutes') / dayLength} />
-          </EventsList>;
+          return (
+            <EventsList>
+              {uniqBy(events, 'name').map(({ name, location, start, end, duration, calendar }) => (
+                <EventBox
+                  len={duration / dayLength}
+                  top={start.diff(dayStart, 'minutes') / dayLength}
+                >
+                  <Time>
+                    {start?.format('HH:mm')}
+                    {/* – {end?.format('HH:mm')} ({duration}m) */}
+                  </Time>
+                  <Title inline={duration < 20}>{name}</Title>
+                </EventBox>
+              ))}
+              <NowLine top={dayjs().diff(dayStart, 'minutes') / dayLength} />
+            </EventsList>
+          );
         })()
       ) : (
         <EmptyDisclaimer>no events today</EmptyDisclaimer>
