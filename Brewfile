@@ -23,6 +23,8 @@ brew "folly"
 brew "fish"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Geospatial Data Abstraction Library
+brew "gdal"
 # Distributed revision control system
 brew "git"
 # Add GitHub support to git on the command-line
