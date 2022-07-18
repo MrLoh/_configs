@@ -6,6 +6,9 @@ export PATH=$PATH:/usr/local/sbin
 export EDITOR=micro
 export VISUAL="$EDITOR"
 
+# setup postgres
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+
 # add android SDK
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools

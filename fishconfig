@@ -1,6 +1,9 @@
 # Path to your oh-my-fish.
 set fish_path $HOME/.oh-my-fish
 
+# setup postgres
+set PATH /Applications/Postgres.app/Contents/Versions/latest/bin $PATH
+
 # add android device manager
 set ANDROID_HOME /Users/tolo/Library/Android/sdk
 set -x ANDROID_SDK_ROOT /Users/tolo/Library/Android/sdk
@@ -36,7 +39,7 @@ set -g theme_newline_prompt '$ '
 set -g theme_date_format "+%a %H:%M"
 set -g theme_color_scheme terminal
 
-set -U fish_user_paths "/usr/local/opt/libxml2/bin" $fish_user_paths
+set -U fish_user_paths /usr/local/opt/libxml2/bin $fish_user_paths
 
 source ~/.iterm2_shell_integration.fish
 
