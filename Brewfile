@@ -76,6 +76,8 @@ brew "zlib"
 cask "1password"
 # Command-line helper for the 1Password password manager
 cask "1password-cli"
+# Stand alone ad blocker
+cask "adguard"
 # Menu bar icon organizer
 cask "bartender"
 # Tool to customize input devices and automate computer systems
