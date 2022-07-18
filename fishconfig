@@ -4,6 +4,11 @@ set fish_path $HOME/.oh-my-fish
 # setup postgres
 set PATH /Applications/Postgres.app/Contents/Versions/latest/bin $PATH
 
+# setup pyenv
+set -x PYENV_ROOT $HOME/.pyenv
+set fish_user_paths $PYENV_ROOT/bin $fish_user_paths
+pyenv init - | source
+
 # add android device manager
 set ANDROID_HOME /Users/tolo/Library/Android/sdk
 set -x ANDROID_SDK_ROOT /Users/tolo/Library/Android/sdk

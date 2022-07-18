@@ -9,6 +9,11 @@ export VISUAL="$EDITOR"
 # setup postgres
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
+# setup pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 # add android SDK
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools
