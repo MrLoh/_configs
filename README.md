@@ -21,6 +21,8 @@ suggested in [this article][1].
 	- `./link.sh`
 9. Register R notebook kernel
 	- `Rscript ./setup.r`
+10. Load Dash preferences from `~/Repos/_configs/dash/`
+	![Dash Preferences > General > Set Up Syncing](./ressources/dash_load_prefs.png)
 
 Since the configurations are now symlinked, any further changes can easily be committed to git and
 changes from other machines can easily be pulled down via git.
@@ -37,10 +39,10 @@ This contains the following configs:
 - fishfunctions
 
 This helps setup the following tools:
-- iTerm
-- Homebrew
-- Fish Shell
-- NVM for Fish
+- [iTerm 2](https://iterm2.com)
+- [Homebrew](https://brew.sh)
+- [Fish Shell](https://fishshell.com)
+- [Dash](https://kapeli.com/dash)
 
 It also contains [Übersicht](http://tracesof.net/uebersicht/) desktop widgets.
 

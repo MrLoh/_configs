@@ -15,7 +15,8 @@ install.packages(
     "devtools",
     "uuid",
     "digest",
-    "tidyverse"
+    "tidyverse",
+    "languageserver"
   )
 )
 # install IR kernel
