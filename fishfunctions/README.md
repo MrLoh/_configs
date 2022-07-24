@@ -11,10 +11,6 @@
     - issues cd and ll
 - sudo:
     - allows for sudo !!
-- subl:
-    - open in sublime text
-- new:
-    - executes touch and subl
 
 ## Fish
 - newabbr:
