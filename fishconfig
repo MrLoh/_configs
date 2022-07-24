@@ -4,11 +4,6 @@ set fish_path $HOME/.oh-my-fish
 # setup postgres
 set PATH /Applications/Postgres.app/Contents/Versions/latest/bin $PATH
 
-# setup pyenv
-set -x PYENV_ROOT $HOME/.pyenv
-set fish_user_paths $PYENV_ROOT/bin $fish_user_paths
-pyenv init - | source
-
 # add android device manager
 set ANDROID_HOME /Users/tolo/Library/Android/sdk
 set -x ANDROID_SDK_ROOT /Users/tolo/Library/Android/sdk
@@ -43,6 +38,7 @@ set -g theme_newline_cursor yes
 set -g theme_newline_prompt '$ '
 set -g theme_date_format "+%a %H:%M"
 set -g theme_color_scheme terminal
+set -g theme_display_ruby no
 
 set -U fish_user_paths /usr/local/opt/libxml2/bin $fish_user_paths
 
@@ -67,3 +63,6 @@ and . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sl
 
 # export variables
 set -x NODE_OPTIONS "--max_old_space_size=8192"
+
+# setup asdf
+source (brew --prefix asdf)/libexec/asdf.fish

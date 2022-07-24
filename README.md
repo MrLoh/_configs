@@ -19,9 +19,11 @@ suggested in [this article][1].
 	- `./setup.fish.sh`
 8. Create symlinks for profiles (!This will overwrite existing profiles)
 	- `./link.sh`
-9. Register R notebook kernel
+9. Setup asdf and install defaults
+	- `./setup.asdf.sh`
+10. Register R notebook kernel
 	- `Rscript ./setup.r`
-10. Load Dash preferences from `~/Repos/_configs/dash/`
+11. Load Dash preferences from `~/Repos/_configs/dash/`
 	![Dash Preferences > General > Set Up Syncing](./ressources/dash_load_prefs.png)
 
 Since the configurations are now symlinked, any further changes can easily be committed to git and
@@ -37,12 +39,14 @@ This contains the following configs:
 - zshrc
 - fishconfig
 - fishfunctions
+- asdfrc and tool-versions
 
 This helps setup the following tools:
 - [iTerm 2](https://iterm2.com)
 - [Homebrew](https://brew.sh)
 - [Fish Shell](https://fishshell.com)
 - [Dash](https://kapeli.com/dash)
+- [asdf](https://asdf-vm.com)
 
 It also contains [Übersicht](http://tracesof.net/uebersicht/) desktop widgets.
 

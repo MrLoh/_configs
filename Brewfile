@@ -6,6 +6,8 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 
+# Extendable version manager with support for Ruby, Node.js, Erlang & more
+brew "asdf"
 # Automatic configure script builder
 brew "autoconf"
 # Tool for generating GNU Standards-compliant Makefiles
@@ -52,10 +54,6 @@ brew "mas"
 brew "micro"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
-# Python version management
-brew "pyenv"
-# Pyenv plugin to manage virtualenv
-brew "pyenv-virtualenv"
 # Python package management tool
 brew "poetry"
 # Software environment for statistical computing

@@ -23,6 +23,20 @@ ln -s $PWD/bash_profile ~/.bash_profile
 rm -f ~/.zshrc
 ln -s $PWD/zshrc ~/.zshrc
 
+# asdf
+rm -f ~/.asdfrc
+ln -s $PWD/asdfrc ~/.asdfrc
+
+rm -f ~/.tool-versions
+ln -s $PWD/tool-versions ~/.tool-versions
+
+rm -f ~/.default-npm-packages
+ln -s $PWD/default-npm-packages ~/.default-npm-packages
+rm -f ~/.default-python-packages
+ln -s $PWD/default-python-packages ~/.default-python-packages
+rm -f ~/.default-gems
+ln -s $PWD/default-ruby-gems ~/.default-gems
+
 # poetry
 rm -f ~/Library/Preferences/pypoetry/config.toml
 ln -s $PWD/poetryconfig ~/Library/Preferences/pypoetry/config.toml
