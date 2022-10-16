@@ -1,5 +1,6 @@
 tap "AlexanderWillner/tap"
 tap "buo/cask-upgrade"
+tap "edgedb/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
@@ -17,6 +18,8 @@ brew "chamber"
 brew "cocoapods"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
+# CLI for the graph-relational database edgedb
+brew "edgedb-cli"
 # Collection of reusable C++ library artifacts developed at Facebook
 brew "folly"
 # User-friendly command-line shell for UNIX-like operating systems
