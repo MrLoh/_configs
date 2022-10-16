@@ -60,3 +60,5 @@
 	enabled = true
 [color]
 	ui = true
+[rebase]
+	updateRefs = true
