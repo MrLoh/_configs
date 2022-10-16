@@ -1314,6 +1314,45 @@
       "edgedb-cli": {
         "version": "2.0.5",
         "bottle": false
+      },
+      "flyctl": {
+        "version": "0.0.412",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "arm64_monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/flyctl/blobs/sha256:ec3069be35d8e140fbacd777b2db07ddb66c47f6939a80865bd96f660e971914",
+              "sha256": "ec3069be35d8e140fbacd777b2db07ddb66c47f6939a80865bd96f660e971914"
+            },
+            "arm64_big_sur": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/flyctl/blobs/sha256:ec3069be35d8e140fbacd777b2db07ddb66c47f6939a80865bd96f660e971914",
+              "sha256": "ec3069be35d8e140fbacd777b2db07ddb66c47f6939a80865bd96f660e971914"
+            },
+            "monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/flyctl/blobs/sha256:0f4ac3a908b7df54e1aa12de6b29b62e5a8cca7f36e62197c6ebe09c1a99bb30",
+              "sha256": "0f4ac3a908b7df54e1aa12de6b29b62e5a8cca7f36e62197c6ebe09c1a99bb30"
+            },
+            "big_sur": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/flyctl/blobs/sha256:0f4ac3a908b7df54e1aa12de6b29b62e5a8cca7f36e62197c6ebe09c1a99bb30",
+              "sha256": "0f4ac3a908b7df54e1aa12de6b29b62e5a8cca7f36e62197c6ebe09c1a99bb30"
+            },
+            "catalina": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/flyctl/blobs/sha256:0f4ac3a908b7df54e1aa12de6b29b62e5a8cca7f36e62197c6ebe09c1a99bb30",
+              "sha256": "0f4ac3a908b7df54e1aa12de6b29b62e5a8cca7f36e62197c6ebe09c1a99bb30"
+            },
+            "x86_64_linux": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/flyctl/blobs/sha256:a80df455b0bff491a748f051b5127d640e847c04f9d9d88fdd406d14b5aabe7e",
+              "sha256": "a80df455b0bff491a748f051b5127d640e847c04f9d9d88fdd406d14b5aabe7e"
+            }
+          }
+        }
       }
     },
     "cask": {

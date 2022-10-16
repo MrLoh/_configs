@@ -24,6 +24,8 @@ brew "edgedb-cli"
 brew "folly"
 # User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
+# Command-line tools for fly.io services
+brew "flyctl"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # Geospatial Data Abstraction Library
