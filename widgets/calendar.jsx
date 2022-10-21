@@ -104,7 +104,7 @@ export const render = ({ output, error }) => {
         .trim()
         .split('\n')
         .map((s) => s.trim());
-      const [, calendar] = title.match(/\(([^()]+(\([^)]+\)[^)]*)*)\)/);
+      const [, calendar] = title?.match(/\(([^()]+(\([^)]+\)[^)]*)*)\)/) || [];
       const name = title.replace(`(${calendar})`, '').trim();
       const [time, location] = details.reverse();
       const [start, end] = time?.split(' - ').map(parseTime) ?? [];
