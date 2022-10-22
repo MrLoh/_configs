@@ -56,6 +56,8 @@ brew "openssl@3"
 brew "pyenv"
 # Pyenv plugin to manage virtualenv
 brew "pyenv-virtualenv"
+# Python package management tool
+brew "poetry"
 # Software environment for statistical computing
 brew "r"
 # Persistent key-value database, with built-in net interface

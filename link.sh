@@ -23,6 +23,10 @@ ln -s $PWD/bash_profile ~/.bash_profile
 rm -f ~/.zshrc
 ln -s $PWD/zshrc ~/.zshrc
 
+# poetry
+rm -f ~/Library/Preferences/pypoetry/config.toml
+ln -s $PWD/poetryconfig ~/Library/Preferences/pypoetry/config.toml
+
 # übersicht
 cd ./widgets && npm install && cd ..
 rm -rf ~/Library/Application\ Support/Übersicht/widgets
