@@ -48,6 +48,7 @@ const EmptyDisclaimer = styled.p({
 });
 
 export const render = ({ output, error }) => {
+  if (!output) return null;
   const tasks = output
     .trim()
     .split('\n')
