@@ -1,6 +1,6 @@
 [user]
-	name = MrLoh
-	email = flojoto@hotmail.com
+	name = Tobias Lohse
+	email = MrLoh@users.noreply.github.com
 [credential]
 	helper = osxkeychain
 [alias]
@@ -31,12 +31,9 @@
 [push]
 	default = simple
 [diff]
-    tool = Kaleidoscope
-[difftool "Kaleidoscope"]
-  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[mergetool "Kaleidoscope"]
-  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-  trustExitCode = true
+    tool = vscode
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
 [filter "media"]
 	clean = git media clean %f
 	smudge = git media smudge %f
