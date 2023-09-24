@@ -13,3 +13,7 @@ asdf global python latest
 asdf plugin-add terraform https://github.com/asdf-community/asdf-hashicorp.git
 asdg install terraform latest
 asdf global terraform latest
+
+asdf plugin-add rust https://github.com/asdf-community/asdf-rust.git
+asdf install rust latest
+asdf global rust latest
