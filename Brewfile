@@ -1,11 +1,17 @@
-tap "AlexanderWillner/tap"
+tap "adoptopenjdk/openjdk"
 tap "buo/cask-upgrade"
 tap "edgedb/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
+tap "romkatv/powerlevel10k"
 
+
+# Run your GitHub Actions locally
+brew "act"
+# Plugin manager for zsh, inspired by oh-my-zsh and vundle
+brew "antigen"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
@@ -16,36 +22,60 @@ brew "autoconf"
 brew "automake"
 # Fish completion for brew-cask
 brew "brew-cask-completion"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
 # CLI for managing secrets through AWS SSM Parameter Store
 brew "chamber"
 # Dependency manager for Cocoa projects
 brew "cocoapods"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
+# Tools to work with Android .dex and Java .class files
+brew "dex2jar"
+# Load/unload environment variables based on $PWD
+brew "direnv"
+# Shared library for Watchman and Eden projects
+brew "edencommon"
 # CLI for the graph-relational database edgedb
-brew "edgedb-cli"
+brew "edgedb/tap/edgedb-cli"
+# EXIF and IPTC metadata manipulation library and tools
+brew "exiv2"
+# Easiest way to build and release mobile apps
+brew "fastlane"
 # Collection of reusable C++ library artifacts developed at Facebook
 brew "folly"
 # User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
+# C++14 implementation of the TLS-1.3 standard
+brew "fizz"
 # Command-line tools for fly.io services
 brew "flyctl"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # Geospatial Data Abstraction Library
 brew "gdal"
+# Core application library for C
+brew glib
 # Distributed revision control system
 brew "git"
 # Add GitHub support to git on the command-line
 brew "hub"
 # Get events and tasks from the macOS calendar database
 brew "ical-buddy"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Framework for scientific data networking
+brew "libdap"
 # C library of Git core methods that is re-entrant and linkable
 brew "libgit2"
 # X.509 and CMS library
 brew "libksba"
+# Postgres C API library
+brew "libpq"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
 # Generic library support script
 brew "libtool"
 # YAML Parser
@@ -58,6 +88,8 @@ brew "micro"
 brew "openssl@3"
 # Python package management tool
 brew "poetry"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
 # Framework for managing multi-language pre-commit hooks
@@ -66,29 +98,34 @@ brew "pre-commit"
 brew "r"
 # Persistent key-value database, with built-in net interface
 brew "redis"
+# Perl-powered file rename script with many helpful built-ins
+brew "rename"
+# Theme for zsh
+brew "romkatv/powerlevel10k/powerlevel10k"
 # Login and retrieve AWS temporary credentials using a SAML IDP
 brew "saml2aws"
 # Python 2 and 3 compatibility utilities
-brew "six"
+brew "six", link: false
 # Version control system designed to be a better CVS
 brew "subversion"
+# Tool Command Language
+brew "tcl-tk", link: false
 # Tool to build, change, and version infrastructure
 brew "terraform"
-# Simple read-only comand-line interface to Things 3 database
-brew "things.sh"
 # Anonymizing overlay network for TCP
 brew "tor"
-# Helper application for Things
-cask "thingsmacsandboxhelper"
 # CLI tool that moves files or folder to the trash
 brew "trash"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
 # Watch files and take action when they change
 brew "watchman"
 # JavaScript package manager
 brew "yarn"
 # General-purpose lossless data-compression library
 brew "zlib"
-
+# JDK from the Java User Group (JUG)
+cask "adoptopenjdk8"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line helper for the 1Password password manager
@@ -156,17 +193,24 @@ mas "Dark Mode for Safari", id: 1397180934
 mas "DaisyDisk", id: 411643860
 # Calendar software
 mas "Fantastical", id: 975937182
+# Grammar checker for Safari
+mas "Grammarly for Safari", id: 1462114288
 # Icon converter
 mas "iConvert Icons", id: 515197296
 # Read it later servicer
 mas "Instapaper", id: 288545208
 # Instapaper Safari extension
 mas "Instapaper Save", id: 1481302432
+# Menu Bar system monitoring
+mas "iStatistica", id: 1025822138
+# Simple JSON viewer for Safari
+mas "JSONPeep", id: 1458969831
+# Google Meet Mac app
+mas "MeetInOne", id: 1542778639
 # App wrapper for Redis
 mas "Redis Server", id: 972359186
 # RSS reader
 mas "Reeder", id: 1529448980
-# Todo list software
-mas "Things", id: 904280696
+mas "Slack", id: 803453959
 # Apple developer IDE
 mas "Xcode", id: 1487937127
