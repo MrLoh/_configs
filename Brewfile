@@ -6,6 +6,8 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 
+# Official Amazon AWS command-line interface
+brew "awscli"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
 # Automatic configure script builder
@@ -56,14 +58,22 @@ brew "micro"
 brew "openssl@3"
 # Python package management tool
 brew "poetry"
+# Execute binaries from Python packages in isolated environments
+brew "pipx"
+# Framework for managing multi-language pre-commit hooks
+brew "pre-commit"
 # Software environment for statistical computing
 brew "r"
 # Persistent key-value database, with built-in net interface
 brew "redis"
 # Login and retrieve AWS temporary credentials using a SAML IDP
 brew "saml2aws"
+# Python 2 and 3 compatibility utilities
+brew "six"
 # Version control system designed to be a better CVS
 brew "subversion"
+# Tool to build, change, and version infrastructure
+brew "terraform"
 # Simple read-only comand-line interface to Things 3 database
 brew "things.sh"
 # Anonymizing overlay network for TCP
@@ -107,6 +117,8 @@ cask "font-source-sans-pro"
 cask "font-roboto"
 # Web browser
 cask "google-chrome"
+# Set of tools to manage resources and applications hosted on Google Cloud
+cask "google-cloud-sdk"
 # Tool to optimize images to a smaller size
 cask "imageoptim"
 # Terminal emulator as alternative to Apple's Terminal app

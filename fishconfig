@@ -66,3 +66,7 @@ set -x NODE_OPTIONS "--max_old_space_size=8192"
 
 # setup asdf
 source (brew --prefix asdf)/libexec/asdf.fish
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
