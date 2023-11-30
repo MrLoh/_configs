@@ -55,7 +55,7 @@ brew "fzf"
 # Geospatial Data Abstraction Library
 brew "gdal"
 # Core application library for C
-brew glib
+brew "glib"
 # Distributed revision control system
 brew "git"
 # Add GitHub support to git on the command-line
@@ -102,6 +102,8 @@ brew "redis"
 brew "rename"
 # Theme for zsh
 brew "romkatv/powerlevel10k/powerlevel10k"
+# Extremely fast Python linter, written in Rust
+brew "ruff"
 # Login and retrieve AWS temporary credentials using a SAML IDP
 brew "saml2aws"
 # Python 2 and 3 compatibility utilities

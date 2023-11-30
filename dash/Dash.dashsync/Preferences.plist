@@ -146,9 +146,59 @@
 					<string>React_Native</string>
 				</dict>
 			</dict>
+			<key>Tailwind_CSS</key>
+			<dict>
+				<key>date</key>
+				<date>2023-11-06T16:20:37Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>tailwind</string>
+						<string>TailwindCSS</string>
+						<string>tailwind CSS</string>
+					</array>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Tailwind_CSS#readme</string>
+					<key>authorLinkText</key>
+					<string>Ben Booth, Guill Lo, Akinori Musha</string>
+					<key>name</key>
+					<string>Tailwind CSS</string>
+					<key>platform</key>
+					<string>usercontribTailwind_CSS</string>
+					<key>uniqueIdentifier</key>
+					<string>Tailwind_CSS</string>
+				</dict>
+			</dict>
 		</dict>
 		<key>uninstalled</key>
-		<dict/>
+		<dict>
+			<key>next.js</key>
+			<dict>
+				<key>date</key>
+				<date>2023-10-26T21:38:47Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>React</string>
+						<string>React Framework</string>
+						<string>JavaScript</string>
+						<string>TypeScript</string>
+					</array>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/next.js#readme</string>
+					<key>authorLinkText</key>
+					<string>純</string>
+					<key>name</key>
+					<string>Next.js</string>
+					<key>platform</key>
+					<string>usercontribnext.js</string>
+					<key>uniqueIdentifier</key>
+					<string>next.js</string>
+				</dict>
+			</dict>
+		</dict>
 	</dict>
 	<key>actuallyDarkWebView</key>
 	<true/>
@@ -185,6 +235,11 @@
 			<dict>
 				<key>date</key>
 				<date>2021-11-13T18:14:59Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/Man_Pages.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2023-10-25T22:16:38Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/MongoDB.xml</key>
 			<dict>
