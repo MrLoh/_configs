@@ -2,9 +2,7 @@ tap "adoptopenjdk/openjdk"
 tap "buo/cask-upgrade"
 tap "edgedb/tap"
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-fonts"
-tap "homebrew/core"
 tap "romkatv/powerlevel10k"
 
 
@@ -12,6 +10,10 @@ tap "romkatv/powerlevel10k"
 brew "act"
 # Plugin manager for zsh, inspired by oh-my-zsh and vundle
 brew "antigen"
+# Columnar in-memory analytics layer designed to accelerate big data
+brew "apache-arrow"
+# Companion library to apr, the Apache Portable Runtime library
+brew "apr-util"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
@@ -22,8 +24,6 @@ brew "autoconf"
 brew "automake"
 # Fish completion for brew-cask
 brew "brew-cask-completion"
-# GNU File, Shell, and Text utilities
-brew "coreutils"
 # CLI for managing secrets through AWS SSM Parameter Store
 brew "chamber"
 # Dependency manager for Cocoa projects
@@ -42,6 +42,10 @@ brew "edgedb/tap/edgedb-cli"
 brew "exiv2"
 # Easiest way to build and release mobile apps
 brew "fastlane"
+# Thrift functions for querying information from a service
+brew "fb303"
+# Facebook's branch of Apache Thrift, including a new C++ server
+brew "fbthrift"
 # Collection of reusable C++ library artifacts developed at Facebook
 brew "folly"
 # User-friendly command-line shell for UNIX-like operating systems
@@ -54,10 +58,12 @@ brew "flyctl"
 brew "fzf"
 # Geospatial Data Abstraction Library
 brew "gdal"
-# Core application library for C
-brew "glib"
 # Distributed revision control system
 brew "git"
+# Core application library for C
+brew "glib"
+# Next generation open source RPC library and framework
+brew "grpc"
 # Add GitHub support to git on the command-line
 brew "hub"
 # Get events and tasks from the macOS calendar database
@@ -66,6 +72,8 @@ brew "ical-buddy"
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# JSON Schema CLI
+brew "jsonschema"
 # Framework for scientific data networking
 brew "libdap"
 # C library of Git core methods that is re-entrant and linkable
@@ -74,8 +82,6 @@ brew "libgit2"
 brew "libksba"
 # Postgres C API library
 brew "libpq"
-# Lightweight and flexible command-line JSON processor
-brew "jq"
 # Generic library support script
 brew "libtool"
 # YAML Parser
@@ -84,14 +90,16 @@ brew "libyaml"
 brew "mas"
 # Modern and intuitive terminal-based text editor
 brew "micro"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
+# Execute binaries from Python packages in isolated environments
+brew "pipx"
 # Python package management tool
 brew "poetry"
 # PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
-# Execute binaries from Python packages in isolated environments
-brew "pipx"
+# Python version management
+brew "pyenv"
+# Pyenv plugin to manage virtualenv
+brew "pyenv-virtualenv"
 # Framework for managing multi-language pre-commit hooks
 brew "pre-commit"
 # Software environment for statistical computing
@@ -100,8 +108,6 @@ brew "r"
 brew "redis"
 # Perl-powered file rename script with many helpful built-ins
 brew "rename"
-# Theme for zsh
-brew "romkatv/powerlevel10k/powerlevel10k"
 # Extremely fast Python linter, written in Rust
 brew "ruff"
 # Login and retrieve AWS temporary credentials using a SAML IDP
@@ -120,12 +126,19 @@ brew "tor"
 brew "trash"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Command-line interface for Vercel
+brew "vercel-cli"
+# Modular, composable client/server abstractions framework
+brew "wangle"
 # Watch files and take action when they change
 brew "watchman"
 # JavaScript package manager
+brew "edgedb/tap/edgedb-cli"
 brew "yarn"
 # General-purpose lossless data-compression library
 brew "zlib"
+
+
 # JDK from the Java User Group (JUG)
 cask "adoptopenjdk8"
 # Password manager that keeps all passwords secure behind one password
@@ -152,8 +165,8 @@ cask "flipper"
 cask "font-merriweather"
 cask "font-merriweather-sans"
 cask "font-open-sans"
-cask "font-source-sans-pro"
 cask "font-roboto"
+cask "font-source-sans-pro"
 # Web browser
 cask "google-chrome"
 # Set of tools to manage resources and applications hosted on Google Cloud
@@ -162,22 +175,14 @@ cask "google-cloud-sdk"
 cask "imageoptim"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-# Online collaborative whiteboard platform
-cask "miro"
-# Interactive computing suite
-cask "nteract"
 # App wrapper for Postgres
 cask "postgres-unofficial"
-# Collaboration platform for API development
-cask "postman"
 # Data science software focusing on R and Python
 cask "rstudio"
 # Native GUI tool for relational databases
 cask "tableplus"
 # Utility to hide the notch
 cask "topnotch"
-# Run commands and display their output on the desktop
-cask "ubersicht"
 # Open-source code editor
 cask "visual-studio-code"
 
@@ -209,10 +214,16 @@ mas "iStatistica", id: 1025822138
 mas "JSONPeep", id: 1458969831
 # Google Meet Mac app
 mas "MeetInOne", id: 1542778639
+# Clipboard manager
+mas "Paste", id: 967805235
 # App wrapper for Redis
 mas "Redis Server", id: 972359186
 # RSS reader
 mas "Reeder", id: 1529448980
 mas "Slack", id: 803453959
 # Apple developer IDE
-mas "Xcode", id: 1487937127
+mas "Xcode", id: 497799835
+# Apple beta testing app
+mas "TestFlight", id: 899247664
+# Safari extension to fix YouTube player
+mas "Vinegar", id: 1591303229
