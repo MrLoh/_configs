@@ -38,5 +38,6 @@ rm -f ~/.default-gems
 ln -s $PWD/default-ruby-gems ~/.default-gems
 
 # poetry
-rm -f ~/Library/Preferences/pypoetry/config.toml
-ln -s $PWD/poetryconfig ~/Library/Preferences/pypoetry/config.toml
+rm -f ~//Library/Application\ Support/pypoetry/config.toml
+mkdir -p ~/Library/Application\ Support/pypoetry
+ln -s $PWD/poetryconfig ~/Library/Application\ Support/pypoetry/config.toml
