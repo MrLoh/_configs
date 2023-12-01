@@ -7,8 +7,8 @@ asdf install ruby latest
 asdf global ruby latest
 
 asdf plugin add python
-asdf install python latest
-asdf global python latest
+asdf install python latest:11
+asdf global python latest:11
 
 asdf plugin-add terraform https://github.com/asdf-community/asdf-hashicorp.git
 asdg install terraform latest
