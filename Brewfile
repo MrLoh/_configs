@@ -96,6 +96,8 @@ brew "pipx"
 brew "poetry"
 # PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
+# Theme for zsh
+brew "powerlevel10k"
 # Python version management
 brew "pyenv"
 # Pyenv plugin to manage virtualenv

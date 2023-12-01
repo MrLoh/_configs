@@ -1,5 +1,4 @@
-# start fish
-fish
+#!/opt/homebrew/bin/fish
 
 # add homebrew to path
 fish_add_path /opt/homebrew/bin
@@ -22,10 +21,12 @@ curl -L https://iterm2.com/shell_integration/fish -o iterm2_shell_integration.fi
 
 # install cocoa pods 
 sudo gem install cocoapods
-sudo arch -arm64 gem pristine ffi # TODO: check in future if this is still needed
 
 # install xcode command line tools
 xcode-select --install
 
 # use Xcode app instead of just command line tools
 sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+
+# start fish shell
+fish

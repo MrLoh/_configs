@@ -7,8 +7,11 @@ fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-. $(brew --prefix asdf)/libexec/asdf.shsource ~/powerlevel10k/powerlevel10k.zsh-theme
-source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
+. $(brew --prefix asdf)/libexec/asdf.sh 
+source /opt/homebrew/opt/powerlevel10k/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
