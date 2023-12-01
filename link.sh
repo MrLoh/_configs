@@ -40,8 +40,3 @@ ln -s $PWD/default-ruby-gems ~/.default-gems
 # poetry
 rm -f ~/Library/Preferences/pypoetry/config.toml
 ln -s $PWD/poetryconfig ~/Library/Preferences/pypoetry/config.toml
-
-# übersicht
-cd ./widgets && npm install && cd ..
-rm -rf ~/Library/Application\ Support/Übersicht/widgets
-ln -s $PWD/widgets/ ~/Library/Application\ Support/Übersicht/
