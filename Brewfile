@@ -166,7 +166,6 @@ cask "font-merriweather"
 cask "font-merriweather-sans"
 cask "font-open-sans"
 cask "font-roboto"
-cask "font-source-sans-pro"
 # Web browser
 cask "google-chrome"
 # Set of tools to manage resources and applications hosted on Google Cloud
