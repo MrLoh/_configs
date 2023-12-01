@@ -118,6 +118,8 @@ brew "saml2aws"
 brew "six", link: false
 # Version control system designed to be a better CVS
 brew "subversion"
+# Generate scripting interfaces to C/C++ code
+brew "swig"
 # Tool Command Language
 brew "tcl-tk", link: false
 # Tool to build, change, and version infrastructure
@@ -135,7 +137,6 @@ brew "wangle"
 # Watch files and take action when they change
 brew "watchman"
 # JavaScript package manager
-brew "edgedb/tap/edgedb-cli"
 brew "yarn"
 # General-purpose lossless data-compression library
 brew "zlib"
