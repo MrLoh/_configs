@@ -169,10 +169,14 @@ cask "font-merriweather"
 cask "font-merriweather-sans"
 cask "font-open-sans"
 cask "font-roboto"
+# Desktop client for GitHub repositories
+cask "github"
 # Web browser
 cask "google-chrome"
 # Set of tools to manage resources and applications hosted on Google Cloud
 cask "google-cloud-sdk"
+# Utility to fix grammar errors and style issues in text
+cask "grammarly-desktop"
 # Tool to optimize images to a smaller size
 cask "imageoptim"
 # Terminal emulator as alternative to Apple's Terminal app
