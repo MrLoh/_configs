@@ -90,6 +90,8 @@ brew "libyaml"
 brew "mas"
 # Modern and intuitive terminal-based text editor
 brew "micro"
+# Run a Kubernetes cluster locally
+brew "minikube"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
 # Fast, disk space efficient package manager
@@ -144,8 +146,6 @@ brew "yarn"
 brew "zlib"
 
 
-# JDK from the Java User Group (JUG)
-cask "adoptopenjdk8"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line helper for the 1Password password manager
