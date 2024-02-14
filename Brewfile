@@ -58,6 +58,8 @@ brew "flyctl"
 brew "fzf"
 # Geospatial Data Abstraction Library
 brew "gdal"
+# GitHub command-line tool
+brew "gh"
 # Distributed revision control system
 brew "git"
 # Core application library for C
@@ -183,8 +185,6 @@ cask "grammarly-desktop"
 cask "imageoptim"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-# Menubar app for easy ChatGPT access with conversation and inline modes
-cask "macgpt"
 # App to write, plan, collaborate, and get organized
 cask "notion"
 # App wrapper for Postgres
