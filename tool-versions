@@ -1,5 +1,5 @@
-nodejs 18.18.2
+nodejs 18.19.1
 ruby 3.2.2
 python 3.11.5
 terraform 1.5.7
-rust 1.74.0
+rust 1.76.0

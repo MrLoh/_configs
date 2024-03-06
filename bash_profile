@@ -21,3 +21,4 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/H
 
 # setup asdf
 . $(brew --prefix asdf)/libexec/asdf.sh
+export PATH=$PATH:$HOME/.asdf/shims

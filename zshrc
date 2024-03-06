@@ -8,6 +8,7 @@ fi
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 . $(brew --prefix asdf)/libexec/asdf.sh 
+export PATH=$PATH:$HOME/.asdf/shims
 source /opt/homebrew/opt/powerlevel10k/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -15,3 +16,5 @@ source /opt/homebrew/opt/powerlevel10k/share/powerlevel10k/powerlevel10k.zsh-the
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+
+PATH=~/.console-ninja/.bin:$PATH
