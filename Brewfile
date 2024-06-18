@@ -94,6 +94,8 @@ brew "mas"
 brew "micro"
 # Run a Kubernetes cluster locally
 brew "minikube"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
 # Fast, disk space efficient package manager

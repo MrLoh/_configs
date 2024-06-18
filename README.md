@@ -48,6 +48,4 @@ This helps setup the following tools:
 - [Dash](https://kapeli.com/dash)
 - [asdf](https://asdf-vm.com)
 
-It also contains [Übersicht](http://tracesof.net/uebersicht/) desktop widgets.
-
 [1]: https://www.digitalocean.com/community/tutorials/how-to-use-git-to-manage-your-user-configuration-files-on-a-linux-vps#creating-a-configuration-directory-to-store-files
