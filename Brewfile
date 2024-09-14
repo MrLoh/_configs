@@ -160,10 +160,14 @@ cask "adguard"
 cask "bartender"
 # Tool to customize input devices and automate computer systems
 cask "bettertouchtool"
+# AI integrated code editor
+cask "curso"
 # API documentation browser and code snippet manager
 cask "dash"
 # App to build and share containerized applications and microservices
 cask "docker"
+# Diagramming app
+cask "drawio"
 # Collaborative team software
 cask "figma"
 # Web browser
