@@ -62,12 +62,16 @@ brew "gdal"
 brew "gh"
 # Distributed revision control system
 brew "git"
+# Git extension for versioning large files
+brew "git-lfs"
 # Core application library for C
 brew "glib"
 # Next generation open source RPC library and framework
 brew "grpc"
 # Add GitHub support to git on the command-line
 brew "hub"
+# Client library for huggingface.co hub
+brew "huggingface-cli"
 # Get events and tasks from the macOS calendar database
 brew "ical-buddy"
 # Tools and libraries to manipulate images in many formats
@@ -94,6 +98,10 @@ brew "mas"
 brew "micro"
 # Run a Kubernetes cluster locally
 brew "minikube"
+# High Performance, Kubernetes Native Object Storage
+brew "minio"
+# Client for Minio
+brew "minio-mc"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
 # Execute binaries from Python packages in isolated environments
@@ -204,6 +212,7 @@ cask "topnotch"
 # Open-source code editor
 cask "visual-studio-code"
 
+
 # 1Password Safari extension
 mas "1Password for Safari", id: 1569813296
 # Ad blocker
@@ -224,8 +233,6 @@ mas "Grammarly for Safari", id: 1462114288
 mas "iConvert Icons", id: 515197296
 # Read it later servicer
 mas "Instapaper", id: 288545208
-# Instapaper Safari extension
-mas "Instapaper Save", id: 1481302432
 # Menu Bar system monitoring
 mas "iStatistica", id: 1025822138
 # Simple JSON viewer for Safari

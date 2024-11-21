@@ -14,15 +14,6 @@
 	co = checkout
 	pick = cherry-pick
 	amend = commit --amend
-	switch = !legit switch \"$@\"
-	branches = !legit branches
-	sprout = !legit sprout \"$@\"
-	unpublish = !legit unpublish \"$@\"
-	harvest = !legit harvest \"$@\"
-	sync = !legit sync \"$@\"
-	publish = !legit publish \"$@\"
-	graft = !legit graft \"$@\"
-	forcepush = push --force-with-lease
 [core]
 	editor = code --wait
 	excludesfile = /Users/tolo/.gitignore_global
@@ -38,10 +29,6 @@
 	clean = git media clean %f
 	smudge = git media smudge %f
 	required = true
-[merge]
-	tool = ksdiff
-[mergetool "ksdiff"]
-	cmd = ksdiff \\\"$BASE\\\" \\\"$LOCAL\\\" \\\"$REMOTE\\\" \\\"$MERGED\\\"
 [filter "hawser"]
 	clean = git hawser clean %f
 	smudge = git hawser smudge %f
