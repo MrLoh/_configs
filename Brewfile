@@ -1,4 +1,3 @@
-tap "adoptopenjdk/openjdk"
 tap "buo/cask-upgrade"
 tap "edgedb/tap"
 tap "homebrew/bundle"
@@ -108,8 +107,6 @@ brew "pandoc"
 brew "pipx"
 # Fast, disk space efficient package manager
 brew "pnpm"
-# Python package management tool
-brew "poetry"
 # PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
 # Theme for zsh
@@ -169,7 +166,7 @@ cask "bartender"
 # Tool to customize input devices and automate computer systems
 cask "bettertouchtool"
 # AI integrated code editor
-cask "curso"
+cask "cursor"
 # API documentation browser and code snippet manager
 cask "dash"
 # App to build and share containerized applications and microservices

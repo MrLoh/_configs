@@ -71,3 +71,6 @@ set -x PATH $HOME/.asdf/shims $PATH
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+
+# pipx
+set PATH $PATH /Users/mrloh/.local/bin
