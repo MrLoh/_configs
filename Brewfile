@@ -65,6 +65,8 @@ brew "git"
 brew "git-lfs"
 # Core application library for C
 brew "glib"
+# dot visualization tool
+brew "graphviz"
 # Next generation open source RPC library and framework
 brew "grpc"
 # Add GitHub support to git on the command-line
@@ -129,6 +131,8 @@ brew "ruff"
 brew "saml2aws"
 # Python 2 and 3 compatibility utilities
 brew "six", link: false
+# Web-based viewer for Python profiler output
+brew "snakeviz"
 # Version control system designed to be a better CVS
 brew "subversion"
 # Generate scripting interfaces to C/C++ code
