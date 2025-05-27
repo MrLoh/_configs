@@ -74,3 +74,12 @@ set --export PATH $BUN_INSTALL/bin $PATH
 
 # pipx
 set PATH $PATH /Users/mrloh/.local/bin
+
+# windsurf
+set PATH $PATH /Users/mrloh/.codeium/windsurf/bin
+
+# pnpm
+set -gx PNPM_HOME "/Users/mrloh/Library/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
