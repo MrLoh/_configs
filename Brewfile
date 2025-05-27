@@ -169,20 +169,18 @@ cask "adguard"
 cask "bartender"
 # Tool to customize input devices and automate computer systems
 cask "bettertouchtool"
+# OpenAI's official ChatGPT desktop app
+cask "chatgpt"
 # AI integrated code editor
 cask "cursor"
 # API documentation browser and code snippet manager
 cask "dash"
-# App to build and share containerized applications and microservices
-cask "docker"
 # Diagramming app
 cask "drawio"
 # Collaborative team software
 cask "figma"
 # Web browser
 cask "firefox"
-# Desktop debugging platform for mobile developers
-cask "flipper"
 # Fonts
 cask "font-merriweather"
 cask "font-merriweather-sans"
@@ -202,8 +200,12 @@ cask "imageoptim"
 cask "iterm2"
 # App to write, plan, collaborate, and get organized
 cask "notion"
+# Replacement for Docker Desktop
+cask "orbstack"
 # App wrapper for Postgres
 cask "postgres-unofficial"
+# System wide Slack style Emoji picker
+cask "rocket"
 # Data science software focusing on R and Python
 cask "rstudio"
 # Native GUI tool for relational databases
@@ -228,24 +230,17 @@ mas "Dark Mode for Safari", id: 1397180934
 mas "DaisyDisk", id: 411643860
 # Calendar software
 mas "Fantastical", id: 975937182
-# Grammar checker for Safari
-mas "Grammarly for Safari", id: 1462114288
 # Icon converter
 mas "iConvert Icons", id: 515197296
-# Read it later servicer
-mas "Instapaper", id: 288545208
 # Menu Bar system monitoring
 mas "iStatistica", id: 1025822138
 # Simple JSON viewer for Safari
 mas "JSONPeep", id: 1458969831
-# Google Meet Mac app
-mas "MeetInOne", id: 1542778639
 # Clipboard manager
 mas "Paste", id: 967805235
 # App wrapper for Redis
 mas "Redis Server", id: 972359186
-# RSS reader
-mas "Reeder", id: 1529448980
+# Slack app
 mas "Slack", id: 803453959
 # Apple developer IDE
 mas "Xcode", id: 497799835
