@@ -69,6 +69,8 @@ brew "glib"
 brew "graphviz"
 # Next generation open source RPC library and framework
 brew "grpc"
+# Kubernetes package manager
+brew "helm"
 # Add GitHub support to git on the command-line
 brew "hub"
 # Client library for huggingface.co hub
@@ -81,6 +83,8 @@ brew "imagemagick"
 brew "jq"
 # JSON Schema CLI
 brew "jsonschema"
+# Kubernetes Command Line Interface (kubectl)
+brew "kubernetes-cli"
 # Framework for scientific data networking
 brew "libdap"
 # C library of Git core methods that is re-entrant and linkable
