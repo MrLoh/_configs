@@ -1,5 +1,6 @@
-nodejs 18.20.4
+nodejs 20.19.0
 ruby 3.2.2
 python 3.12.8
 terraform 1.5.7
 rust 1.76.0
+poetry 1.8.4
