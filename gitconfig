@@ -22,8 +22,8 @@
 [push]
 	default = simple
 [diff]
-    tool = vscode
-[difftool "vscode"]
+    tool = cursor
+[difftool "cursor"]
     cmd = code --wait --diff $LOCAL $REMOTE
 [filter "media"]
 	clean = git media clean %f
@@ -46,3 +46,4 @@
 	ui = true
 [rebase]
 	updateRefs = true
+	tool = cursor

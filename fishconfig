@@ -86,3 +86,5 @@ end
 
 # orbstack
 source ~/.orbstack/shell/init2.fish 2>/dev/null || :
+
+alias claude="/Users/mrloh/.claude/local/claude"

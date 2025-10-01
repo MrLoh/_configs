@@ -29,6 +29,10 @@ brew "chamber"
 brew "cocoapods"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
+# Toll for container signing
+brew "cosign"
+# Tool for interacting with remote images and registries
+brew "crane"
 # Tools to work with Android .dex and Java .class files
 brew "dex2jar"
 # Load/unload environment variables based on $PWD
@@ -61,6 +65,8 @@ brew "gdal"
 brew "gh"
 # Distributed revision control system
 brew "git"
+# Highly customizable changelog generator
+brew "git-cliff"
 # Git extension for versioning large files
 brew "git-lfs"
 # Core application library for C
@@ -129,6 +135,8 @@ brew "r"
 brew "redis"
 # Perl-powered file rename script with many helpful built-ins
 brew "rename"
+# Search tool like grep
+brew "ripgrep"
 # Extremely fast Python linter, written in Rust
 brew "ruff"
 # Login and retrieve AWS temporary credentials using a SAML IDP
@@ -145,14 +153,20 @@ brew "swig"
 brew "tcl-tk", link: false
 # Tool to build, change, and version infrastructure
 brew "terraform"
+# Vulnerability scanner for container images, file systems, and Git repos
+brew "trivy"
 # Anonymizing overlay network for TCP
 brew "tor"
 # CLI tool that moves files or folder to the trash
 brew "trash"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
 # Command-line interface for Vercel
 brew "vercel-cli"
+# Tool to create, transform and attest VEX metadata
+brew "vexctl"
 # Modular, composable client/server abstractions framework
 brew "wangle"
 # Watch files and take action when they change

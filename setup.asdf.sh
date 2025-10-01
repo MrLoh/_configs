@@ -17,7 +17,7 @@ asdf install poetry latest
 asdf global poetry latest
 
 asdf plugin-add terraform https://github.com/asdf-community/asdf-hashicorp.git
-asdg install terraform latest
+asdf install terraform latest
 asdf global terraform latest
 
 asdf plugin-add rust https://github.com/asdf-community/asdf-rust.git
