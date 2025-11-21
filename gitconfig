@@ -47,3 +47,5 @@
 [rebase]
 	updateRefs = true
 	tool = cursor
+[sequence]
+	editor = cursor --wait

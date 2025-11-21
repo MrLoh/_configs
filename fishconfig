@@ -88,3 +88,4 @@ end
 source ~/.orbstack/shell/init2.fish 2>/dev/null || :
 
 alias claude="/Users/mrloh/.claude/local/claude"
+set -gx DYLD_LIBRARY_PATH "/opt/homebrew/lib:$DYLD_LIBRARY_PATH"
