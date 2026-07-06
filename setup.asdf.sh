@@ -4,6 +4,10 @@ asdf plugin add bun
 asdf install bun latest
 asdf set -u bun latest
 
+asdf plugin add pnpm
+asdf install pnpm latest
+asdf set -u pnpm latest
+
 asdf plugin add nodejs
 asdf install nodejs latest:18
 asdf global nodejs latest:18

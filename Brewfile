@@ -117,8 +117,6 @@ brew "minio-mc"
 brew "pandoc"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
-# Fast, disk space efficient package manager
-brew "pnpm"
 # PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
 # Theme for zsh
