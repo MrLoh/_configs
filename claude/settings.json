@@ -1,0 +1,9 @@
+{
+  "alwaysThinkingEnabled": true,
+  "skipDangerousModePermissionPrompt": true,
+  "effortLevel": "medium",
+  "model": "opus",
+  "permissions": {
+    "defaultMode": "bypassPermissions"
+  }
+}

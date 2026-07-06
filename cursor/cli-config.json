@@ -1,0 +1,96 @@
+{
+  "permissions": {
+    "allow": [
+      "Shell(*)",
+      "Read(**/*)",
+      "Write(**/*)",
+      "Mcp(mcp-server-context7:query-docs)"
+    ],
+    "deny": []
+  },
+  "version": 1,
+  "editor": {
+    "vimMode": false
+  },
+  "display": {
+    "showLineNumbers": false,
+    "showThinkingBlocks": false,
+    "showStatusIndicators": false,
+    "showStatusLineRunningTime": false
+  },
+  "notifications": true,
+  "hints": true,
+  "rewind": true,
+  "suggestNextPrompt": false,
+  "model": {
+    "modelId": "claude-opus-4-8",
+    "displayModelId": "claude-opus-4-8",
+    "displayName": "Opus 4.8 300K Medium",
+    "displayNameShort": "Opus 4.8 300K Medium",
+    "aliases": [],
+    "maxMode": false
+  },
+  "hasChangedDefaultModel": true,
+  "maxMode": false,
+  "modelParameters": {
+    "composer-2.5": [
+      {
+        "id": "fast",
+        "value": "true"
+      }
+    ],
+    "claude-opus-4-8": [
+      {
+        "id": "thinking",
+        "value": "true"
+      },
+      {
+        "id": "context",
+        "value": "300k"
+      },
+      {
+        "id": "fast",
+        "value": "false"
+      },
+      {
+        "id": "effort",
+        "value": "medium"
+      }
+    ]
+  },
+  "selectedModel": {
+    "modelId": "claude-opus-4-8",
+    "parameters": [
+      {
+        "id": "thinking",
+        "value": "true"
+      },
+      {
+        "id": "context",
+        "value": "300k"
+      },
+      {
+        "id": "fast",
+        "value": "false"
+      },
+      {
+        "id": "effort",
+        "value": "medium"
+      }
+    ]
+  },
+  "privacyCache": {
+    "ghostMode": false,
+    "privacyMode": 3,
+    "updatedAt": 1782745190847
+  },
+  "authInfo": {
+    "email": "tobias.lohse@me.com",
+    "displayName": "Tobias Lohse",
+    "userId": 55180002,
+    "authId": "github|user_01J6WR70STX3X27D0N5HDDQZTA"
+  },
+  "network": {
+    "useHttp1ForAgent": false
+  }
+}

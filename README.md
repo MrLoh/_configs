@@ -39,7 +39,22 @@ This contains the following configs:
 - zshrc
 - fishconfig
 - fishfunctions
-- asdfrc and tool-versions
+- asdf
+- cursor (CLI & IDE)
+- claude
+- zed
+
+### Secrets
+
+Some generated configs need a real secret that must never be committed. `link.sh` loads an untracked
+`.env` file and uses its variables to fill in placeholders in templates.
+
+Create `~/Repos/_configs/.env` with:
+```
+CONTEXT7_API_KEY=your-key-here
+```
+Then run `./link.sh`. If `.env` is missing or a variable is unset, the generated file will contain 
+an empty placeholder instead.
 
 This helps setup the following tools:
 - [iTerm 2](https://iterm2.com)

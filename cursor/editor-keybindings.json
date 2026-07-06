@@ -1,0 +1,142 @@
+[
+	{
+		"key": "cmd+shift+\\",
+		"command": "workbench.action.toggleAuxiliaryBar",
+	},
+	{
+		"key": "cmd+'",
+		"command": "workbench.action.terminal.toggleTerminal",
+	},
+	{
+		"key": "cmd+l",
+		"command": "editor.action.insertCursorAtEndOfEachLineSelected",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "shift+alt+i",
+		"command": "-editor.action.insertCursorAtEndOfEachLineSelected",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "cmd+k",
+		"command": "workbench.action.quickOpen"
+	},
+	{
+		"key": "cmd+e",
+		"command": "aipopup.action.modal.generate",
+		"when": "editorFocus && !composerBarIsVisible && !composerControlPanelIsVisible"
+	},
+	{
+		"key": "cmd+k",
+		"command": "-aipopup.action.modal.generate",
+		"when": "editorFocus && !composerBarIsVisible && !composerControlPanelIsVisible"
+	},
+	{
+		"key": "shift+cmd+k",
+		"command": "-aipopup.action.modal.generate",
+		"when": "editorFocus && !composerBarIsVisible && !composerControlPanelIsVisible"
+	},
+	{
+		"key": "cmd+e",
+		"command": "cursorai.action.generateInTerminal",
+		"when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "cmd+k",
+		"command": "-cursorai.action.generateInTerminal",
+		"when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "cmd+i",
+		"command": "composerMode.agent"
+	},
+	{
+		"key": "alt+cmd+i",
+		"command": "composerMode.background"
+	},
+	{
+		"key": "cmd+e",
+		"command": "-cursor.composer.openEditorWindow",
+		"when": "cursor.appLayoutEnabled && cursor.appLayout == 'agent'"
+	},
+	{
+		"key": "cmd+e",
+		"command": "-cursor.composer.openAgentWindow",
+		"when": "cursor.appLayoutEnabled && cursor.appLayout != 'agent'"
+	},
+	{
+		"key": "cmd+'",
+		"command": "workbench.action.togglePanel",
+		"when": "!isAuxiliaryWindowFocusedContext"
+	},
+	{
+		"key": "cmd+j",
+		"command": "-workbench.action.togglePanel",
+		"when": "!isAuxiliaryWindowFocusedContext"
+	},
+	{
+		"key": "cmd+\\",
+		"command": "workbench.action.toggleSidebarVisibility",
+		"when": "!isAuxiliaryWindowFocusedContext"
+	},
+	{
+		"key": "cmd+b",
+		"command": "-workbench.action.toggleSidebarVisibility",
+		"when": "!isAuxiliaryWindowFocusedContext"
+	},
+	{
+		"key": "cmd+d",
+		"command": "composer.sendToAgent",
+		"when": "editorHasPromptBar && editorPromptBarFocused"
+	},
+	{
+		"key": "cmd+l",
+		"command": "-composer.sendToAgent",
+		"when": "editorHasPromptBar && editorPromptBarFocused"
+	},
+	{
+		"key": "cmd+d",
+		"command": "-editor.action.addSelectionToNextFindMatch",
+		"when": "editorFocus"
+	},
+	{
+		"key": "cmd+d",
+		"command": "-notebook.addFindMatchToSelection",
+		"when": "config.notebook.multiCursor.enabled && notebookCellEditorFocused && activeEditor == 'workbench.editor.notebook'"
+	},
+	{
+		"key": "cmd+d",
+		"command": "-composer.toggleChatAsEditor",
+		"when": "composerFocused && !editorTextFocus"
+	},
+	{
+		"key": "cmd+l cmd+o",
+		"command": "-extension.liveServer.goOnline",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "cmd+l cmd+c",
+		"command": "-extension.liveServer.goOffline",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "cmd+d",
+		"command": "aichat.newchataction",
+		"when": "activeEditor != 'workbench.editor.browserEditor'"
+	},
+	{
+		"key": "cmd+l",
+		"command": "-aichat.newchataction",
+		"when": "activeEditor != 'workbench.editor.browserEditor'"
+	},
+	{
+		"key": "alt+cmd+s",
+		"command": "workbench.action.toggleUnifiedSidebarFromKeyboard",
+		"when": "!isAuxiliaryWindowFocusedContext"
+	},
+	{
+		"key": "alt+cmd+s",
+		"command": "workbench.action.toggleUnifiedSidebarFromKeyboard",
+		"when": "!isAuxiliaryWindowFocusedContext"
+	}
+]
