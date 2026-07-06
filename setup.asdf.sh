@@ -1,5 +1,9 @@
 asdf completion fish > ~/.config/fish/completions/asdf.fish
 
+asdf plugin add bun
+asdf install bun latest
+asdf set -u bun latest
+
 asdf plugin add nodejs
 asdf install nodejs latest:18
 asdf global nodejs latest:18
