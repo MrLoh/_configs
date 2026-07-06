@@ -1,5 +1,4 @@
 tap "buo/cask-upgrade"
-tap "edgedb/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "romkatv/powerlevel10k"
@@ -39,8 +38,6 @@ brew "dex2jar"
 brew "direnv"
 # Shared library for Watchman and Eden projects
 brew "edencommon"
-# CLI for the graph-relational database edgedb
-brew "edgedb/tap/edgedb-cli"
 # EXIF and IPTC metadata manipulation library and tools
 brew "exiv2"
 # Easiest way to build and release mobile apps
@@ -127,8 +124,6 @@ brew "pyenv"
 brew "pyenv-virtualenv"
 # Framework for managing multi-language pre-commit hooks
 brew "pre-commit"
-# Software environment for statistical computing
-brew "r"
 # Persistent key-value database, with built-in net interface
 brew "redis"
 # Perl-powered file rename script with many helpful built-ins
@@ -181,18 +176,26 @@ cask "1password"
 cask "1password-cli"
 # Stand alone ad blocker
 cask "adguard"
+# Browse, search and analyse your past AI coding sessions
+cask "agentsview"
 # Menu bar icon organizer
 cask "bartender"
 # Tool to customize input devices and automate computer systems
 cask "bettertouchtool"
 # OpenAI's official ChatGPT desktop app
 cask "chatgpt"
+# Anthropic's official Claude AI desktop app
+cask "claude"
+# OpenAI's coding agent that runs in your terminal
+cask "codex"
 # AI integrated code editor
 cask "cursor"
 # API documentation browser and code snippet manager
 cask "dash"
 # Diagramming app
 cask "drawio"
+# Launch builds and start simulators from your menu bar
+cask "expo-orbit"
 # Collaborative team software
 cask "figma"
 # Web browser
@@ -208,28 +211,32 @@ cask "github"
 cask "google-chrome"
 # Set of tools to manage resources and applications hosted on Google Cloud
 cask "google-cloud-sdk"
-# Utility to fix grammar errors and style issues in text
-cask "grammarly-desktop"
 # Tool to optimize images to a smaller size
 cask "imageoptim"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # App to write, plan, collaborate, and get organized
 cask "notion"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
 # Replacement for Docker Desktop
 cask "orbstack"
 # App wrapper for Postgres
 cask "postgres-unofficial"
 # System wide Slack style Emoji picker
 cask "rocket"
-# Data science software focusing on R and Python
-cask "rstudio"
+# VPN client for secure internet access and private browsing
+cask "surfshark"
 # Native GUI tool for relational databases
 cask "tableplus"
-# Utility to hide the notch
-cask "topnotch"
 # Open-source code editor
 cask "visual-studio-code"
+# Adaptive brightness for displays
+cask "vivid-app"
+# Rust-based terminal
+cask "warp"
+# Multiplayer code editor
+cask "zed"
 
 
 # 1Password Safari extension
