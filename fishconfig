@@ -89,3 +89,6 @@ source ~/.orbstack/shell/init2.fish 2>/dev/null || :
 
 alias claude="~/.claude/local/claude"
 set -gx DYLD_LIBRARY_PATH "/opt/homebrew/lib:$DYLD_LIBRARY_PATH"
+
+# kiro
+string match -q "$TERM_PROGRAM" "kiro" and . (kiro --locate-shell-integration-path fish)

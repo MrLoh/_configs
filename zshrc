@@ -7,8 +7,8 @@ fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-. $(brew --prefix asdf)/libexec/asdf.sh 
-export PATH=$PATH:$HOME/.asdf/shims
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
 source /opt/homebrew/opt/powerlevel10k/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -16,4 +16,8 @@ source /opt/homebrew/opt/powerlevel10k/share/powerlevel10k/powerlevel10k.zsh-the
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+alias ll='ls -l'
 
+
+# kiro
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
