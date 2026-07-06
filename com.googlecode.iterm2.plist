@@ -2,8 +2,46 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AIFeatureFunctionCalling</key>
+	<true/>
+	<key>AIFeatureHostedCodeInterpeter</key>
+	<false/>
+	<key>AIFeatureHostedFileSearch</key>
+	<false/>
+	<key>AIFeatureHostedWebSearch</key>
+	<false/>
+	<key>AIFeatureStreamingResponses</key>
+	<true/>
+	<key>AIPermissionCheckTerminalState</key>
+	<integer>1</integer>
+	<key>AIPermissionRunCommands</key>
+	<integer>1</integer>
+	<key>AIPermissionTypeForYou</key>
+	<integer>1</integer>
+	<key>AIPermissionViewHistory</key>
+	<integer>1</integer>
+	<key>AIPermissionViewManpages</key>
+	<integer>1</integer>
+	<key>AIPermissionWriteToClipboard</key>
+	<integer>1</integer>
+	<key>AIPermissionWriteToFilesystem</key>
+	<integer>1</integer>
+	<key>AITermAPI</key>
+	<integer>7</integer>
+	<key>AIVectorStore</key>
+	<integer>0</integer>
+	<key>AIVendor</key>
+	<integer>4</integer>
 	<key>AdjustWindowForFontSizeChange</key>
 	<false/>
+	<key>AiMaxTokens</key>
+	<integer>200000</integer>
+	<key>AiModel</key>
+	<string>claude-sonnet-4-5</string>
+	<key>AiResponseMaxTokens</key>
+	<integer>64000</integer>
+	<key>AitermURL</key>
+	<string>https://api.anthropic.com/v1/messages</string>
 	<key>AllowClipboardAccess</key>
 	<false/>
 	<key>AlternateMouseScroll</key>
@@ -1306,6 +1344,19 @@
 			<integer>32</integer>
 			<key>Text</key>
 			<string></string>
+		</dict>
+		<key>0xd-0x20000-0x24</key>
+		<dict>
+			<key>Action</key>
+			<integer>12</integer>
+			<key>Keycode</key>
+			<integer>13</integer>
+			<key>Modifiers</key>
+			<integer>131072</integer>
+			<key>Text</key>
+			<string>\n</string>
+			<key>Version</key>
+			<integer>1</integer>
 		</dict>
 		<key>0xf700-0x300000</key>
 		<dict>

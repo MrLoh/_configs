@@ -1,6 +1,7 @@
-nodejs 20.19.0
+nodejs 22.22.3
 ruby 3.2.2
 python 3.12.8
 terraform 1.5.7
 rust 1.76.0
 poetry 2.1.4
+pnpm 11.5.2

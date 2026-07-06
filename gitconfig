@@ -15,7 +15,7 @@
 	pick = cherry-pick
 	amend = commit --amend
 [core]
-	editor = code --wait
+	editor = cursor --wait
 	excludesfile = /Users/tolo/.gitignore_global
 	autocrlf = input
 	ignorecase = false
@@ -49,3 +49,5 @@
 	tool = cursor
 [sequence]
 	editor = cursor --wait
+[init]
+	defaultBranch = main
