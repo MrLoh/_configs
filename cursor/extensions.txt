@@ -6,10 +6,8 @@ anthropic.claude-code
 anysphere.cursorpyright
 anysphere.remote-containers
 anysphere.remote-ssh
-aquasecurityofficial.trivy-vulnerability-scanner
 attilabuti.vscode-mjml
 bashmish.es6-string-css
-bierner.comment-tagged-templates
 bierner.markdown-mermaid
 bpruitt-goddard.mermaid-markdown-syntax-highlighting
 bradlc.vscode-tailwindcss
@@ -20,6 +18,7 @@ davidlday.languagetool-linter
 dbaeumer.vscode-eslint
 deerawan.vscode-dash
 donjayamanne.typescript-notebook
+eamodio.gitlens
 ecmel.vscode-html-css
 editorconfig.editorconfig
 enkia.tokyo-night
@@ -34,15 +33,12 @@ frigus02.vscode-sql-tagged-template-literals-syntax-only
 github.github-vscode-theme
 github.vscode-github-actions
 github.vscode-pull-request-github
-graphite.gti-vscode
 graphql.vscode-graphql
 graphql.vscode-graphql-syntax
-hashicorp.hcl
 hashicorp.terraform
 hbenl.vscode-test-explorer
 hediet.vscode-drawio
 humao.rest-client
-leonhard-s.python-sphinx-highlight
 lokalise.i18n-ally
 lunaryorn.fish-ide
 magicstack.edgedb
@@ -52,11 +48,9 @@ mikestead.dotenv
 monokai.theme-monokai-pro-vscode
 mrmlnc.vscode-duplicate
 ms-azuretools.vscode-docker
-ms-kubernetes-tools.vscode-kubernetes-tools
 ms-playwright.playwright
 ms-python.black-formatter
 ms-python.debugpy
-ms-python.isort
 ms-python.python
 ms-toolsai.jupyter
 ms-toolsai.jupyter-keymap
@@ -68,7 +62,6 @@ ms-vscode.vscode-speech
 ms-vscode.vscode-typescript-next
 ms-vsliveshare.vsliveshare
 msjsdiag.vscode-react-native
-nrwl.angular-console
 openai.chatgpt
 orta.vscode-jest
 orta.vscode-react-native-storybooks
@@ -85,7 +78,7 @@ samuelcolvin.jinjahtml
 skyapps.fish-vscode
 stkb.rewrap
 streetsidesoftware.code-spell-checker
-tailscale.vscode-tailscale
+swmansion.react-native-ide
 tamasfe.even-better-toml
 teabyii.ayu
 this-fifo.natty
