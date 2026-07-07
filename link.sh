@@ -44,6 +44,9 @@ ln -s $PWD/bash_profile ~/.bash_profile
 rm -f ~/.zshrc
 ln -s $PWD/zshrc ~/.zshrc
 
+rm -f ~/.p10k.zsh
+ln -s $PWD/p10k.zsh ~/.p10k.zsh
+
 # asdf
 rm -f ~/.asdfrc
 ln -s $PWD/asdfrc ~/.asdfrc

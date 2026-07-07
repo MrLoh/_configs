@@ -30,9 +30,6 @@ set fish_plugins git rails brew subl python node
 # disable .pyc files
 set -x PYTHONDONTWRITEBYTECODE 1
 
-# create hub alias
-eval (hub alias -s)
-
 # promt options
 set -g theme_newline_cursor yes
 set -g theme_newline_prompt '$ '
@@ -65,7 +62,6 @@ and . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sl
 set -x NODE_OPTIONS "--max_old_space_size=8192"
 
 # setup asdf
-source (brew --prefix asdf)/libexec/asdf.fish
 set -x PATH $HOME/.asdf/shims $PATH 
 
 # pipx

@@ -13,7 +13,10 @@ suggested in [this article][1].
 4. Clone this repo: 
 	- `git clone https://github.com/MrLoh/configs.git`
 5. Install [Operator Mono Lig](https://github.com/kiliman/operator-mono-lig) fonts
-6. Load iTerm preferences from `~/Repos/_config/`
+6. Sign in to your account in [Warp](https://www.warp.dev) (the default terminal). Its built-in
+   settings sync (already enabled) restores appearance, keybindings, and shell defaults
+   automatically — no config files to symlink.
+	- Optionally load iTerm preferences from `~/Repos/_config/` if you still want it around
 	![iTerm Preferences > General > Preferences](./ressources/iterm_load_prefs.png)
 7. Configure [Fish Shell](https://fishshell.com)
 	- `./setup.fish.sh`
@@ -37,12 +40,17 @@ This contains the following configs:
 - global gitignore
 - bashrc
 - zshrc
+- p10k.zsh (powerlevel10k prompt config, primary shell)
 - fishconfig
 - fishfunctions
 - asdf
 - cursor (CLI & IDE)
 - claude
 - zed
+
+Warp (the default terminal) is provisioned via the [Brewfile](./Brewfile) cask, but its own
+settings (appearance, keybindings, shell default) are not tracked here — they're covered by
+Warp's built-in account settings sync instead.
 
 ### Secrets
 

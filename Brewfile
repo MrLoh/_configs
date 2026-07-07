@@ -87,8 +87,6 @@ brew "grpc"
 brew "helm"
 # Client library for huggingface.co hub
 brew "hf"
-# Add GitHub support to git on the command-line
-brew "hub"
 # Get events and tasks from the macOS calendar database
 brew "ical-buddy"
 # Tools and libraries to manipulate images in many formats
@@ -191,6 +189,10 @@ brew "yarn"
 brew "yq"
 # General-purpose lossless data-compression library
 brew "zlib"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
 
 
 # Password manager that keeps all passwords secure behind one password
