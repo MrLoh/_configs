@@ -15,13 +15,15 @@ Default to files edited in this conversation. Only widen scope (branch diff, spe
 
 ### 2. Collect applicable guidelines
 
-Read the root `AGENTS.md`, the language guide (`PYTHON.md` or `TYPESCRIPT.md`), and the `AGENTS.md` in the subdirectory being edited.
+Read all relevant `AGENTS.md` files at the root of the project and in any nested folders that you touched as well as other files that those might reference.
 
 Then discover which **skills** are relevant by scanning the changed code for imports, libraries, and patterns that match skill descriptions in the system prompt. Read each matching skill's `SKILL.md` — the conventions are in there.
 
 ### 3. Read, compare, and fix
 
-For each changed file: read it, compare against the collected guidelines and skill conventions, and fix violations directly.
+For each changed file: read it, compare against the collected guidelines and skill conventions, and fix violations directly. 
+
+Don't just look at files in isolation but also consider wether the changeset as a whole is following architectural patterns and best practices that are outlined in the guidance or clear conventions of the project.
 
 ### 4. Verify
 

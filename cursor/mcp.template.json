@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "Grep": {
+      "url": "https://mcp.grep.app"
+    },
+    "Playwright": {
+      "command": "npx @playwright/mcp@latest",
+      "env": {}
+    },
+    "console-ninja": {
+      "command": "node",
+      "args": [
+        "~/.console-ninja/mcp/"
+      ]
+    },
+    "context7": {
+      "url": "https://mcp.context7.com/mcp",
+      "headers": {
+        "CONTEXT7_API_KEY": "__CONTEXT7_API_KEY__"
+      }
+    }
+  }
+}

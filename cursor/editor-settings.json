@@ -16,6 +16,7 @@
     },
     "tabulous.activeTabColor": "#FFF",
     "editor.fontLigatures": true,
+    "editor.wordWrapColumn": 100,
     "editor.fontFamily": "Operator Mono Lig",
     "editor.fontSize": 15,
     "editor.rulers": [
@@ -301,6 +302,7 @@
         "Streamable",
         "tailwindcss",
         "testset",
+        "timestamptz",
         "tomli",
         "topk",
         "tqdm",
@@ -614,7 +616,7 @@
     "git.confirmNoVerifyCommit": false,
     "cursor.composer.shouldChimeAfterChatFinishes": true,
     "terminal.integrated.env.linux": {},
-    "workbench.preferredLightColorTheme": "Atom One Light",
+    "workbench.preferredLightColorTheme": "GitHub Light Default",
     "gitlens.ai.model": "gitkraken",
     "gitlens.ai.gitkraken.model": "gemini:gemini-2.0-flash",
     "files.associations": {
@@ -665,5 +667,6 @@
         "latitude": 50.048653,
         "longitude": -122.4324,
         "isDisabled": true
-    }
+    },
+    "cursor.composer.editorConversationDensity": "detailed"
 }

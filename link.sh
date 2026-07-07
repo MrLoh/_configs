@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 # Load and validate secrets
 if [ -f "$PWD/.env" ]; then
@@ -6,8 +7,18 @@ if [ -f "$PWD/.env" ]; then
   source "$PWD/.env"
   set +a
 fi
-if [ -z "$CONTEXT7_API_KEY" ]; then
-  echo "Warning: CONTEXT7_API_KEY is not set; ~/.config/zed/settings.json will contain a placeholder" >&2
+
+REQUIRED_ENV_VARS=(CONTEXT7_API_KEY)
+missing=()
+for var in "${REQUIRED_ENV_VARS[@]}"; do
+  if [ -z "${!var}" ]; then
+    missing+=("$var")
+  fi
+done
+if [ "${#missing[@]}" -gt 0 ]; then
+  echo "Error: missing required .env value(s): ${missing[*]}" >&2
+  echo "Add them to $PWD/.env before running this script." >&2
+  exit 1
 fi
 
 # Git
@@ -57,7 +68,7 @@ mkdir -p ~/.cursor
 rm -f ~/.cursor/cli-config.json
 ln -s $PWD/cursor/cli-config.json ~/.cursor/cli-config.json
 rm -f ~/.cursor/mcp.json
-ln -s $PWD/cursor/mcp.json ~/.cursor/mcp.json
+perl -pe 's/__([A-Z0-9_]+)__/$ENV{$1} \/\/ ""/ge' $PWD/cursor/mcp.template.json > ~/.cursor/mcp.json
 
 # cursor editor
 mkdir -p ~/Library/Application\ Support/Cursor/User
@@ -70,8 +81,13 @@ ln -s $PWD/cursor/editor-keybindings.json ~/Library/Application\ Support/Cursor/
 mkdir -p ~/.claude
 rm -f ~/.claude/settings.json
 ln -s $PWD/claude/settings.json ~/.claude/settings.json
+
+# shared agent skills (Cursor reads ~/.agents/skills natively; Claude Code reads ~/.claude/skills)
+mkdir -p ~/.agents
+rm -rf ~/.agents/skills
+ln -s $PWD/agents/skills ~/.agents/skills
 rm -rf ~/.claude/skills
-ln -s $PWD/claude/skills ~/.claude/skills
+ln -s $PWD/agents/skills ~/.claude/skills
 
 # zed
 mkdir -p ~/.config/zed

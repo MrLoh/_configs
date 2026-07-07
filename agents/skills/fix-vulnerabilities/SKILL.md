@@ -9,31 +9,31 @@ Guidelines for fixing security vulnerabilities in Poetry (Python) and Yarn (Node
 
 ## Fetching Dependabot alerts
 
-You can fetch vulnerability scan results from Dependabot via the GitHub API. Requires `gh` CLI and a token with `repo` or `security_events` scope (e.g. `GH_TOKEN`).
+You can fetch vulnerability scan results from Dependabot via the GitHub API. Requires `gh` CLI and a token with `repo` or `security_events` scope (e.g. `GH_TOKEN`). `gh api` auto-resolves `{owner}/{repo}` to the current repo's GitHub remote.
 
 **List open alerts** (summary):
 
 ```bash
-gh api repos/OrcaDB/orca/dependabot/alerts --paginate \
+gh api repos/{owner}/{repo}/dependabot/alerts --paginate \
   -q '.[] | select(.state == "open") | {number, package: .dependency.package.name, ecosystem: .dependency.package.ecosystem, severity: .security_vulnerability.severity, manifest: .dependency.manifest_path, summary: .security_advisory.summary}'
 ```
 
 **Filter by ecosystem** (e.g. pip, npm):
 
 ```bash
-gh api "repos/OrcaDB/orca/dependabot/alerts?ecosystem=pip&state=open" --paginate
+gh api "repos/{owner}/{repo}/dependabot/alerts?ecosystem=pip&state=open" --paginate
 ```
 
 **Filter by severity** (low, medium, high, critical):
 
 ```bash
-gh api "repos/OrcaDB/orca/dependabot/alerts?severity=high&state=open" --paginate
+gh api "repos/{owner}/{repo}/dependabot/alerts?severity=high&state=open" --paginate
 ```
 
 **Get full details for one alert** (includes patched versions, CVEs):
 
 ```bash
-gh api repos/OrcaDB/orca/dependabot/alerts/ALERT_NUMBER
+gh api repos/{owner}/{repo}/dependabot/alerts/ALERT_NUMBER
 ```
 
 The response includes `security_vulnerability.first_patched_version` and `security_advisory.cves` for remediation.
@@ -42,33 +42,21 @@ The response includes `security_vulnerability.first_patched_version` and `securi
 
 ## Local vulnerability scans (Trivy)
 
-The monorepo uses [Trivy](https://aquasecurity.github.io/trivy/) to scan dependencies. Install with `brew install trivy` or follow [Trivy installation](https://trivy.dev/latest/getting-started/installation/).
+If the monorepo uses [Trivy](https://aquasecurity.github.io/trivy/) to scan dependencies, install with `brew install trivy` or follow [Trivy installation](https://trivy.dev/latest/getting-started/installation/).
 
-**Scan all subprojects** (from repo root):
+**Scan all subprojects** (from repo root, if using Nx or a similar task runner):
 
 ```bash
 yarn vulnerabilities
 # or
-nx run-many -t vulnerabilities -p lighthouse nautilus orca_sdk orcalib
+nx run-many -t vulnerabilities -p <project1> <project2> ...
 ```
 
-**Scan a single subproject**:
+**Scan a single subproject** (from the project directory): use whichever package manager the subproject uses, e.g. `poetry run vulnerabilities` for a Poetry project, `yarn vulnerabilities` for a Yarn project. Check the subproject's `pyproject.toml` / `package.json` scripts for the exact task name.
 
-| Project    | Command (from project dir)                          |
-|-----------|------------------------------------------------------|
-| lighthouse| `poetry run vulnerabilities`                         |
-| nautilus  | `yarn vulnerabilities`                              |
-| orca_sdk  | `poetry run vulnerabilities`                        |
-| orcalib   | `poetry run vulnerabilities`                        |
+**Docker image scans** (requires built images): if the subproject exposes a `docker-vulnerabilities` script/target, run it from the project directory (e.g. `poetry run docker-vulnerabilities`, `yarn docker-vulnerabilities`).
 
-**Docker image scans** (requires built images):
-
-| Project    | Command (from project dir)                          |
-|-----------|------------------------------------------------------|
-| lighthouse| `poetry run docker-vulnerabilities` (scans `lighthouse` image) |
-| nautilus  | `yarn docker-vulnerabilities` (scans `nautilus` image)       |
-
-All Trivy commands use `--scanners vuln --ignore-unfixed`. CVEs can be temporarily ignored via `.trivyignore.yml` at the repo root (include `expired_at` and `statement` per policy).
+Prefer running Trivy with `--scanners vuln --ignore-unfixed`. CVEs can be temporarily ignored via a `.trivyignore.yml` at the repo root (include `expired_at` and `statement` per policy).
 
 ## Principles
 
@@ -93,7 +81,7 @@ All Trivy commands use `--scanners vuln --ignore-unfixed`. CVEs can be temporari
 **Never** run `poetry update` without specifying a package. That updates *all* dependencies to latest compatible versions and causes:
 
 - Massive lockfile changes
-- Potential CI failures (new Pyright, griffe, pymilvus, etc.)
+- Potential CI failures from unrelated transitive packages bumping to new major versions
 - Unnecessary type-checker or runtime breakage
 
 ### Workflow

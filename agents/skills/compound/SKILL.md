@@ -27,10 +27,8 @@ Compounding means turning what you learned in **this** task into **durable guida
 
 ## Where Guidance Lives
 
-- **`AGENTS.md`** (repo root): General rules for all work. Subdirectories (`lighthouse/`, `nautilus/`, `orcalib/`, `orca_sdk/`) have their own `AGENTS.md` for project-specific guidance.
-- **`PYTHON.md` / `TYPESCRIPT.md`** (repo root): Language-specific style guides.
-- **`.cursor/CLOUD_AGENTS.md`**: Cloud agent environment setup (only applies inside the container).
-- **Skills** (`.claude/skills/`): Heavier reusable procedures, often with tool integrations.
+- **`AGENTS.md`**: General rules for all work, might be nested in subfolders or link to other guideline files.
+- **Skills**: Heavier reusable procedures, often with tool integrations.
 
 ## When Writing Rules
 
@@ -38,9 +36,9 @@ Compounding means turning what you learned in **this** task into **durable guida
 - **Use real examples from the codebase** - don't make up examples
 - **Keep rules concise** - avoid over-specifying; trust developers to apply judgment
 - **Prefer editing existing files** - consolidate related guidance rather than creating new files
-- **Place at the most specific scope** - project rules in the project's `AGENTS.md`, language rules in `PYTHON.md`/`TYPESCRIPT.md`, general rules only in the root `AGENTS.md`
+- **Place at the most specific scope** - put rules in the `AGENTS.md` closest to the code that it applies to or in more specific guideline files that are referenced from the `AGENTS.md`
 - **Avoid heading proliferation** - add bullet points under existing headings rather than creating new subheadings for every specific tip unless a new section is warranted.
-- **Generalize before placing** - don't write rules that are specific to one feature or one incident. Extract the underlying principle (e.g. "don't duplicate resolution logic in lighthouse for ignore_unlabeled" → "push default resolution down the call stack"). If the principle is language-specific, put it in the language file, not the project's `AGENTS.md`.
+- **Generalize before placing** - don't write rules that are specific to one feature or one incident. Extract the underlying principle (e.g. "don't duplicate resolution logic in the notifications service for default channel routing" → "push default resolution down the call stack"). If the principle is language-specific, put it in the language file, not the project's `AGENTS.md`.
 - **Don't overcorrect to the last instance** - when the user corrects you, extract the general principle rather than writing a rule that only prevents the exact mistake you just made.
 - **Don't mix concerns** - a rule about typing patterns belongs in the language file, not a project's `AGENTS.md`. A rule about which layer owns business logic belongs in the project file. Ask: "would this apply if I were working on a different feature in the same project?" If yes, it's the right scope. If it would apply in a different project too, move it up.
 - **Write for a stranger** - someone reading the rule should understand it without context from this conversation. Avoid referencing specific classes, fields, or features. If you can't explain the rule without a concrete example, the rule is too specific — generalize it or skip it.

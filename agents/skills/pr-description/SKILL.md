@@ -7,7 +7,7 @@ description: Generate a PR title and description with changelog and review guide
 
 Generate a PR title and description for the current branch. Only consider the code changes and ignore the commit messages.
 
-Before writing anything, verify you have a complete picture of the changes. Do not rely on partial context from the conversation — the discussion may have only covered a subset of the work. Determine the base branch by running `.claude/skills/pr-description/find-base-branch.sh`, then run `git diff <base>...HEAD` to see the full diff. Compare the diff against what you already know: if there are files or changes you haven't seen or discussed, read them before proceeding. The description must cover all changes in the PR, not just the ones that came up in conversation.
+Before writing anything, verify you have a complete picture of the changes. Do not rely on partial context from the conversation — the discussion may have only covered a subset of the work. Determine the base branch by running the `find-base-branch.sh` script located alongside this skill file, then run `git diff <base>...HEAD` to see the full diff. Compare the diff against what you already know: if there are files or changes you haven't seen or discussed, read them before proceeding. The description must cover all changes in the PR, not just the ones that came up in conversation.
 
 If a PR already exists for this branch, fetch the current description with `gh pr view --json title,body` and use it as a starting point — add new changes, update what shifted, and remove anything that's no longer accurate or was reverted.
 
@@ -39,9 +39,9 @@ The PR description must start with a `## Changelog` section that contains `### <
 - removals: "Removed", "Deleted", "Deprecated"
 - changes: "Changed", "Upgraded", "Merged", "Ensured", "Separated", "Simplified", "Updated", "Improved", "Renamed", "Refactored", "Moved", "Optimized", "Cleaned"
 
-Valid codebases are: "Lighthouse", "Nautilus", "OrcaLib", "OrcaSDK", "OpenAPIHttpx" (nested library in OrcaSDK for OpenAPI code generation), "Infra", "CI", "Setup" (developer environment, repo-level tooling, IDE config like `.cursor/` and `.claude/`), "Research", "Demo", "Docs", "Customers"
+Valid codebases are the project's top-level subprojects/packages (e.g. derived from repo-root directory names or package manifests — ask the user if the project's convention isn't obvious), plus repo-wide buckets as applicable: "Infra", "CI", "Setup" (developer environment, repo-level tooling, IDE config like `.cursor/` and `.claude/`), "Research", "Demo", "Docs", "Customers".
 
-When a change to Infra, CI, or Demo has relevant effects on another codebase it should be included in the changelog section for that codebase as well. Conversely, internal-only changes (e.g. test fixes, CI config, dev tooling) in a codebase like OrcaSDK or Lighthouse should go under CI or Setup, not under the codebase's own heading — reserve codebase headings for user-facing changes.
+When a change to Infra, CI, or Demo has relevant effects on another codebase it should be included in the changelog section for that codebase as well. Conversely, internal-only changes (e.g. test fixes, CI config, dev tooling) in a specific codebase package should go under CI or Setup, not under the codebase's own heading — reserve codebase headings for user-facing changes.
 
 The descriptions should summarize the overall effect of the changes, not simply outline every code change. Be concise — only include changes relevant to the behavior of the software, not irrelevant refactorings with little to no effect on the user. If there is just one change, use a single bullet point. Aim for 1–4 bullets per codebase — group related changes into a single bullet rather than listing each file or tweak separately. Details and rationale belong in the Review Guide, not the changelog.
 
@@ -50,7 +50,7 @@ The descriptions should summarize the overall effect of the changes, not simply 
 Bad (implementation-level, too many bullets, internal refactors listed):
 
 ```
-### Nautilus:
+### Web:
 
 - Added SAML 2.0 SP sign-in via `@node-saml/node-saml` — gated by `SAML_ENTRY_POINT`, `SAML_ISSUER`, and `SAML_IDP_CERT` env vars; uses Redis for `InResponseTo` validation; POST ACS handler at `/login/saml`
 - Added "Continue with SSO" button on the login page when SAML is configured
@@ -62,7 +62,7 @@ Bad (implementation-level, too many bullets, internal refactors listed):
 Good (user-facing effect, grouped, no implementation details):
 
 ```
-### Nautilus:
+### Web:
 
 - Added SAML 2.0 single sign-on with any SAML-compatible identity provider
 - Removed spurious timezone cookie warning from server logs
@@ -101,11 +101,11 @@ For a medium PR on branch `mrloh/add-invite-revocation` (HEAD SHA `a1b2c3d`):
 ```
 ## Changelog
 
-### Lighthouse:
+### API:
 
 - Added endpoint to revoke org invites
 
-### Nautilus:
+### Web:
 
 - Added revoke button to the org invitations list
 
@@ -117,12 +117,12 @@ Reused the existing `DELETE /invites/:id` pattern rather than adding a new `/rev
 
 The new `revoke_invite` signature:
 
-https://github.com/OrcaDB/orca/blob/a1b2c3d/lighthouse/src/invite/service.py#L30-L38
+https://github.com/<org>/<repo>/blob/a1b2c3d/api/src/invite/service.py#L30-L38
 
 ### Highlights
 
-- Permission check in [`service.py#L32-L40`](https://github.com/OrcaDB/orca/blob/mrloh/add-invite-revocation/lighthouse/src/invite/service.py#L32-L40) — cascading delete of notification records is the tricky part
-- Confirmation dialog in [`InviteList.tsx#L95-L110`](https://github.com/OrcaDB/orca/blob/mrloh/add-invite-revocation/nautilus/src/app/.../InviteList.tsx#L95-L110) — handles the edge case where the invite expires while the dialog is open
+- Permission check in [`service.py#L32-L40`](https://github.com/<org>/<repo>/blob/mrloh/add-invite-revocation/api/src/invite/service.py#L32-L40) — cascading delete of notification records is the tricky part
+- Confirmation dialog in [`InviteList.tsx#L95-L110`](https://github.com/<org>/<repo>/blob/mrloh/add-invite-revocation/web/src/app/.../InviteList.tsx#L95-L110) — handles the edge case where the invite expires while the dialog is open
 
 ### Gotchas
 

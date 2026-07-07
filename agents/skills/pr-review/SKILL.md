@@ -5,7 +5,7 @@ description: Produces a standalone, local review-guide document (file) for a PR 
 
 # PR Review Guide
 
-Produces a markdown review guide document that a reviewer can use locally. The guide explains what changed, why, and where to look. Follow AGENTS.md and, for structure, align with the Review Guide section in [.claude/skills/pr-description/SKILL.md](.claude/skills/pr-description/SKILL.md).
+Produces a markdown review guide document that a reviewer can use locally. The guide explains what changed, why, and where to look. Follow AGENTS.md and, for structure, align with the Review Guide section in [pr-description/SKILL.md](../pr-description/SKILL.md).
 
 ## When to use
 
@@ -28,7 +28,7 @@ Keep this order: design and code-first sections before user-facing or process se
    - **Legend:** (c) created, (m) modified, (r) removed.
    - In the tree use `├c─`, `├m─`, `└r─` (and `├──`, `└──` for directories or when status is not shown). Keep line comments short.
    - Below the tree, optional bullet list of the same files as clickable local links with (c)/(m)/(r) and one-line description.
-3. **Changelog** — From the PR or derived; use repo codebase names (Lighthouse, Nautilus, OrcaLib, Customers, etc.).
+3. **Changelog** — From the PR or derived; use the project's own codebase/package names (e.g. top-level directories or packages in the repo).
 4. **Design decisions that matter** — Per area or file:
    - Start with **Intent:** (what problem, what constraints, what trade-offs).
    - Point to files with local links. Embed small code snippets for the most important design choices.
@@ -42,7 +42,7 @@ Keep this order: design and code-first sections before user-facing or process se
 
 ## Conventions
 
-- **Links:** Use repo-root-relative paths so the guide works when viewed locally, e.g. `[data_prep_133.py](customers/pan/utils/data_prep_133.py)`.
+- **Links:** Use repo-root-relative paths so the guide works when viewed locally, e.g. `[data_prep.py](services/api/utils/data_prep.py)`.
 - **Filetree status:** c = created, m = modified, r = removed. Use them in the tree and in the list (e.g. `(c)` after filenames).
 - **Design:** Lead with motivations and intent; avoid long code walkthroughs. Use code blocks only for snippets that illustrate a design choice.
 - **Tone:** Assume the reviewer knows the codebase; state intent and constraints, not basic architecture.

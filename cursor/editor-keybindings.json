@@ -8,11 +8,6 @@
 		"command": "workbench.action.terminal.toggleTerminal",
 	},
 	{
-		"key": "cmd+l",
-		"command": "editor.action.insertCursorAtEndOfEachLineSelected",
-		"when": "editorTextFocus"
-	},
-	{
 		"key": "shift+alt+i",
 		"command": "-editor.action.insertCursorAtEndOfEachLineSelected",
 		"when": "editorTextFocus"
@@ -85,7 +80,7 @@
 		"when": "!isAuxiliaryWindowFocusedContext"
 	},
 	{
-		"key": "cmd+d",
+		"key": "cmd+l",
 		"command": "composer.sendToAgent",
 		"when": "editorHasPromptBar && editorPromptBarFocused"
 	},
@@ -120,7 +115,7 @@
 		"when": "editorTextFocus"
 	},
 	{
-		"key": "cmd+d",
+		"key": "cmd+l",
 		"command": "aichat.newchataction",
 		"when": "activeEditor != 'workbench.editor.browserEditor'"
 	},
@@ -138,5 +133,15 @@
 		"key": "alt+cmd+s",
 		"command": "workbench.action.toggleUnifiedSidebarFromKeyboard",
 		"when": "!isAuxiliaryWindowFocusedContext"
+	},
+	{
+		"key": "cmd+d",
+		"command": "-glass.splitTileHorizontalFromKeyboard",
+		"when": "glassNoModalOpen && isGlassEmptyWorkspace && !editorTextFocus && !glassEditorPanelVisible && !terminalFocusInAny || glassNoModalOpen && isGlassEmptyWorkspace && !editorTextFocus && !terminalFocusInAny && glassActiveTabKind != 'browser'"
+	},
+	{
+		"key": "shift+cmd+d",
+		"command": "-glass.splitTileVerticalFromKeyboard",
+		"when": "glassNoModalOpen && isGlassEmptyWorkspace && !editorTextFocus && !glassEditorPanelVisible && !terminalFocusInAny || glassNoModalOpen && isGlassEmptyWorkspace && !editorTextFocus && !terminalFocusInAny && glassActiveTabKind != 'browser'"
 	}
 ]
