@@ -1,5 +1,0 @@
-{
-	"terminal.integrated.defaultProfile.osx": "fish",
-	"terminal.integrated.shellIntegration.showWelcome": false,
-	"r.lsp.promptToInstall": false
-}

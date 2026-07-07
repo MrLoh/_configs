@@ -1,13 +1,12 @@
 #!/opt/homebrew/bin/fish
+# Optional fish setup. Does not change the default shell — run ./setup.zsh.sh for that.
+# Start fish anytime with: fish
 
 # add homebrew to path
 fish_add_path /opt/homebrew/bin
 
 # add fish to known shells
 sudo bash -c 'echo '(which fish)' >> /etc/shells'
-
-# set default shell to fish
-chsh -s (which fish)
 
 # install oh my fish (https://github.com/oh-my-fish/oh-my-fish)
 curl -L https://get.oh-my.fish | fish
@@ -16,8 +15,7 @@ curl -L https://get.oh-my.fish | fish
 omf install bobthefish
 
 # setup iTerm fish shell integration (https://iterm2.com/documentation-shell-integration.html)
-curl -L https://iterm2.com/shell_integration/fish -o iterm2_shell_integration.fish
-
+curl -L https://iterm2.com/shell_integration/fish -o ~/.iterm2_shell_integration.fish
 
 # install cocoa pods 
 sudo gem install cocoapods

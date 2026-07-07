@@ -1,3 +1,7 @@
+mkdir -p ~/.asdf/completions
+asdf completion zsh > ~/.asdf/completions/_asdf
+
+mkdir -p ~/.config/fish/completions
 asdf completion fish > ~/.config/fish/completions/asdf.fish
 
 asdf plugin add bun
@@ -9,25 +13,26 @@ asdf install pnpm latest
 asdf set -u pnpm latest
 
 asdf plugin add nodejs
-asdf install nodejs latest:18
-asdf global nodejs latest:18
+asdf install nodejs latest:22
+asdf set -u nodejs latest:22
+./fix-asdf-corepack-shims.sh
 
 asdf plugin add ruby
 asdf install ruby latest
-asdf global ruby latest
+asdf set -u ruby latest
 
 asdf plugin add python
-asdf install python latest:12
-asdf global python latest:12
+asdf install python latest:3.12
+asdf set -u python latest:3.12
 
 asdf plugin add poetry https://github.com/asdf-community/asdf-poetry.git
 asdf install poetry latest
-asdf global poetry latest
+asdf set -u poetry latest
 
-asdf plugin-add terraform https://github.com/asdf-community/asdf-hashicorp.git
+asdf plugin add terraform https://github.com/asdf-community/asdf-hashicorp.git
 asdf install terraform latest
-asdf global terraform latest
+asdf set -u terraform latest
 
-asdf plugin-add rust https://github.com/asdf-community/asdf-rust.git
+asdf plugin add rust https://github.com/asdf-community/asdf-rust.git
 asdf install rust latest
-asdf global rust latest
+asdf set -u rust latest

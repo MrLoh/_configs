@@ -1,7 +1,9 @@
 tap "buo/cask-upgrade"
-tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
+tap "buildpacks/tap"
+tap "dopplerhq/cli"
 tap "romkatv/powerlevel10k"
+tap "sourcemeta/apps"
+tap "stripe/stripe-cli"
 tap "withgraphite/tap"
 
 
@@ -25,6 +27,8 @@ brew "autoconf"
 brew "automake"
 # Fish completion for brew-cask
 brew "brew-cask-completion"
+# A CLI for building apps using Cloud Native Buildpacks
+brew "buildpacks/tap/pack"
 # CLI for managing secrets through AWS SSM Parameter Store
 brew "chamber"
 # Cross-platform make
@@ -39,10 +43,14 @@ brew "cosign"
 brew "crane"
 # Tool for testing and debugging Dependabot update jobs
 brew "dependabot"
+# Lightweight, framework-agnostic database migration tool
+brew "dbmate"
 # Tools to work with Android .dex and Java .class files
 brew "dex2jar"
 # Load/unload environment variables based on $PWD
 brew "direnv"
+# The official Doppler CLI for managing your secrets
+brew "dopplerhq/cli/doppler"
 # Shared library for Watchman and Eden projects
 brew "edencommon"
 # EXIF and IPTC metadata manipulation library and tools
@@ -79,6 +87,8 @@ brew "git-lfs"
 brew "glib"
 # dot visualization tool
 brew "graphviz"
+# GNU Privacy Guard, required by Doppler for binary signature verification
+brew "gnupg"
 # Allows you to manage your stacked changes and submit them for review on GitHub
 brew "withgraphite/tap/graphite"
 # Next generation open source RPC library and framework
@@ -95,8 +105,6 @@ brew "imagemagick"
 brew "jose"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# JSON Schema CLI
-brew "jsonschema"
 # Kubernetes Command Line Interface (kubectl)
 brew "kubernetes-cli"
 # Framework for scientific data networking
@@ -111,6 +119,8 @@ brew "libpq"
 brew "libtool"
 # YAML Parser
 brew "libyaml"
+# Scalable, high-performance WebRTC server
+brew "livekit"
 # Mac App Store command-line interface
 brew "mas"
 # Modern and intuitive terminal-based text editor
@@ -149,20 +159,20 @@ brew "ripgrep"
 brew "ruff"
 # Login and retrieve AWS temporary credentials using a SAML IDP
 brew "saml2aws"
-# Python 2 and 3 compatibility utilities
-brew "six", link: false
 # Easiest, most secure way to use WireGuard and 2FA
 brew "tailscale"
 # Web-based viewer for Python profiler output
 brew "snakeviz"
 # Version control system designed to be a better CVS
 brew "subversion"
+# Postgres development platform
+brew "supabase"
+# Stripe CLI utility
+brew "stripe/stripe-cli/stripe"
 # Generate scripting interfaces to C/C++ code
 brew "swig"
 # Tool Command Language
 brew "tcl-tk", link: false
-# Tool to build, change, and version infrastructure
-brew "terraform"
 # Vulnerability scanner for container images, file systems, and Git repos
 brew "trivy"
 # Anonymizing overlay network for TCP
@@ -211,8 +221,12 @@ cask "bettertouchtool"
 cask "chatgpt"
 # Anthropic's official Claude AI desktop app
 cask "claude"
+# Anthropic's official Claude AI desktop app
+cask "claude-code"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
+# AI integrated code editor
+cask "codex-app"
 # AI integrated code editor
 cask "cursor"
 # API documentation browser and code snippet manager
@@ -225,11 +239,6 @@ cask "expo-orbit"
 cask "figma"
 # Web browser
 cask "firefox"
-# Fonts
-cask "font-merriweather"
-cask "font-merriweather-sans"
-cask "font-open-sans"
-cask "font-roboto"
 # Desktop client for GitHub repositories
 cask "github"
 # Set of tools to manage resources and applications hosted on Google Cloud
@@ -240,6 +249,12 @@ cask "google-chrome"
 cask "imageoptim"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# CLI for working with JSON Schema
+cask "sourcemeta/apps/jsonschema"
+# Agent-centric IDE with spec-driven development
+cask "kiro"
+# App to manage software development and track bugs
+cask "linear"
 # App to write, plan, collaborate, and get organized
 cask "notion"
 # Knowledge base that works on top of a local folder of plain text Markdown files
@@ -264,14 +279,14 @@ cask "vivid-app"
 cask "warp"
 # Multiplayer code editor
 cask "zed"
+# OpenJDK distribution from Azul
+cask "zulu@17"
 
 
 # 1Password Safari extension
 mas "1Password for Safari", id: 1569813296
 # Ad blocker
 mas "AdGuard for Safari", id: 1440147259
-# Browser management tool
-mas "BrowserFairy", id: 1499080593
 # Contacts app
 mas "Cardhop", id: 1290358394
 # Docs and notes editor
@@ -280,10 +295,8 @@ mas "Craft", id: 1487937127
 mas "DaisyDisk", id: 411643860
 # Calendar software
 mas "Fantastical", id: 975937182
-# Icon converter
-mas "iConvert Icons", id: 515197296
 # Menu Bar system monitoring
-mas "iStatistica", id: 1025822138
+mas "iStatistica Pro", id: 1447778660
 # Simple JSON viewer for Safari
 mas "JSONPeep", id: 1458969831
 # Dark Mode for Safari
@@ -298,6 +311,8 @@ mas "Save to Reader", id: 1640236961
 mas "Slack", id: 803453959
 # Manage devices on your Tailscale network
 mas "Tailscale", id: 1475387142
+# Open links in the browser of your choice
+mas "Velja", id: 1607635845
 # Apple developer IDE
 mas "Xcode", id: 497799835
 # Apple beta testing app

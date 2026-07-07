@@ -8,6 +8,16 @@ fi
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
+
+# resolve partial versions in .nvmrc/.node-version to the newest installed match
+export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY=latest_installed
+autoload -Uz compinit
+if [[ -n ${ZDOTDIR:-$HOME}/.zcompdump(#qN.mh+24) ]]; then
+  compinit
+else
+  compinit -C
+fi
 
 source /opt/homebrew/opt/powerlevel10k/share/powerlevel10k/powerlevel10k.zsh-theme
 
@@ -26,8 +36,8 @@ export PATH="~/Library/Android/sdk/platform-tools/:$PATH"
 export PATH="~/Library/Android/sdk/tools/:$PATH"
 export PATH="~/Library/Android/sdk/emulator:$PATH"
 
-# use java 8
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+# Azul Zulu OpenJDK 17
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 
 # disable .pyc files
 export PYTHONDONTWRITEBYTECODE=1

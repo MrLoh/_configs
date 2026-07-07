@@ -114,7 +114,7 @@
     "flow.useLSP": true,
     "flow.useNPMPackagedFlow": true,
     "terminal.external.osxExec": "iTerm.app",
-    "terminal.integrated.fontFamily": "Operator Mono Lig",
+    "terminal.integrated.fontFamily": "OperatorMono Nerd Font",
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.cursorBlinking": true,
@@ -340,7 +340,7 @@
     "editor.unicodeHighlight.allowedCharacters": {
         "️": true
     },
-    "terminal.integrated.defaultProfile.osx": "fish",
+    "terminal.integrated.defaultProfile.osx": "zsh",
     "editor.bracketPairColorization.enabled": false,
     "editor.unicodeHighlight.ambiguousCharacters": false,
     "json.maxItemsComputed": 50000,

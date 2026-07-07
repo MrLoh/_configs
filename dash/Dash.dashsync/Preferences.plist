@@ -93,7 +93,7 @@
 			<key>Keras</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-01T00:55:35Z</date>
+				<date>2026-07-07T16:40:33Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -120,7 +120,7 @@
 			<key>React_Native</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-01T00:55:35Z</date>
+				<date>2026-07-07T16:40:34Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -149,7 +149,7 @@
 			<key>Tailwind_CSS</key>
 			<dict>
 				<key>date</key>
-				<date>2024-11-21T03:34:49Z</date>
+				<date>2026-07-07T16:40:34Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -214,92 +214,87 @@
 			<key>http://kapeli.com/feeds/Apple_API_Reference.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-01T00:56:55Z</date>
+				<date>2026-07-07T16:40:48Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/CSS.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-01T00:56:25Z</date>
+				<date>2026-07-07T16:40:41Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/HTML.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-01T00:56:14Z</date>
+				<date>2026-07-07T16:40:45Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/JavaScript.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-01T00:56:07Z</date>
+				<date>2026-07-07T16:40:52Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Lo-Dash.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-01T00:55:36Z</date>
+				<date>2026-07-07T16:40:35Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Man_Pages.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-01T00:55:56Z</date>
+				<date>2026-07-07T16:40:46Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/MongoDB.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-01T00:56:27Z</date>
+				<date>2026-07-07T16:41:04Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/NodeJS.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-01T00:56:11Z</date>
+				<date>2026-07-07T16:40:55Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/NumPy.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-01T00:56:02Z</date>
+				<date>2026-07-07T16:40:54Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Pandas.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-01T00:55:54Z</date>
+				<date>2026-07-07T16:40:51Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/PostgreSQL.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-01T00:56:33Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Python_3.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2023-12-01T00:56:29Z</date>
+				<date>2026-07-07T16:40:54Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/React.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-01T00:56:13Z</date>
+				<date>2026-07-07T16:40:56Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Redis.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-01T00:56:33Z</date>
+				<date>2026-07-07T16:41:05Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/SQLAlchemy.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-01T00:56:03Z</date>
+				<date>2026-07-07T16:40:57Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/SQLite.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-01T00:56:38Z</date>
+				<date>2026-07-07T16:40:58Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/SVG.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-01T00:56:30Z</date>
+				<date>2026-07-07T16:40:56Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/TypeScript.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-01T00:56:18Z</date>
+				<date>2026-07-07T16:40:59Z</date>
 			</dict>
 		</dict>
 		<key>uninstalled</key>

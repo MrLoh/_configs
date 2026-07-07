@@ -5,32 +5,40 @@ suggested in [this article][1].
 
 ### Usage
 
-1. Install [Homebrew](https://brew.sh)
-2. Install Dependencies from [Brewfile](./Brewfile)
-	- `brew bundle`
-3. Create a Repos folder
+2. Create a Repos folder.
 	- `mkdir ~/Repos && cd ~/Repos`
-4. Clone this repo: 
+3. Clone this repo.
 	- `git clone https://github.com/MrLoh/configs.git`
-5. Install [Operator Mono Lig](https://github.com/kiliman/operator-mono-lig) fonts
-6. Sign in to your account in [Warp](https://www.warp.dev) (the default terminal). Its built-in
-   settings sync (already enabled) restores appearance, keybindings, and shell defaults
-   automatically — no config files to symlink.
-	- Optionally load iTerm preferences from `~/Repos/_config/` if you still want it around
-	![iTerm Preferences > General > Preferences](./ressources/iterm_load_prefs.png)
-7. Configure [Fish Shell](https://fishshell.com)
-	- `./setup.fish.sh`
-8. Create symlinks for profiles (!This will overwrite existing profiles)
+1. Install [Homebrew](https://brew.sh).
+4. Review and trust the third-party Homebrew taps listed in the [Brewfile](./Brewfile).
+	- `./trust-brew-taps.sh`
+	- Required when `$HOMEBREW_REQUIRE_TAP_TRUST` is set.
+5. Install Homebrew dependencies.
+	- `brew bundle`
+6. Set up GitHub SSH access.
+	- Run `gh auth login`
+	- Choose **GitHub.com**, **SSH**, and **Login with a web browser**.
+8. Install [Operator Mono Lig](https://github.com/kiliman/operator-mono-lig) fonts.
+9. Sign in to your account in [Warp](https://www.warp.dev) to sync terminal settings.
+10. Create symlinks for profiles (!This will overwrite existing profiles).
 	- `./link.sh`
-9. Setup asdf and install defaults
+11. Set up zsh as the default shell.
+	- `./setup.zsh.sh`
+12. Set up asdf and install defaults.
 	- `./setup.asdf.sh`
-10. Install Cursor extensions from `cursor/extensions.txt`
-	- `./cursor/setup-extensions.sh`
-11. Load Dash preferences from `~/Repos/_configs/dash/`
-	![Dash Preferences > General > Set Up Syncing](./ressources/dash_load_prefs.png)
 
 Since the configurations are now symlinked, any further changes can easily be committed to git and
 changes from other machines can easily be pulled down via git.
+
+Optional setup:
+- Configure [Fish Shell](https://fishshell.com) as an alternative shell (not the default).
+	- `./setup.fish.sh` — installs oh-my-fish, theme, and iTerm integration
+	- `fish` — start a fish session anytime
+- Install Cursor extensions from `cursor/extensions.txt`.
+	- `./cursor/setup-extensions.sh`
+- Load Dash preferences from `~/Repos/_configs/dash/`.
+	![Dash Preferences > General > Set Up Syncing](./ressources/dash_load_prefs.png)
+
 
 
 ### Content
@@ -40,9 +48,8 @@ This contains the following configs:
 - global gitignore
 - bashrc
 - zshrc
-- p10k.zsh (powerlevel10k prompt config, primary shell)
-- fishconfig
-- fishfunctions
+- p10k.zsh (with p10k)
+- fishconfig (optional)
 - asdf
 - cursor (CLI & IDE, including `cursor/extensions.txt` for installed extensions)
 - claude
@@ -75,7 +82,8 @@ commit the change.
 This helps setup the following tools:
 - [iTerm 2](https://iterm2.com)
 - [Homebrew](https://brew.sh)
-- [Fish Shell](https://fishshell.com)
+- [zsh](https://www.zsh.org) with [Powerlevel10k](https://github.com/romkatv/powerlevel10k) (default shell)
+- [Fish Shell](https://fishshell.com) (optional alternative)
 - [Dash](https://kapeli.com/dash)
 - [asdf](https://asdf-vm.com)
 
