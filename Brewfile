@@ -2,8 +2,11 @@ tap "buo/cask-upgrade"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "romkatv/powerlevel10k"
+tap "withgraphite/tap"
 
 
+# Static checker for GitHub Actions workflow files
+brew "actionlint"
 # Run your GitHub Actions locally
 brew "act"
 # Plugin manager for zsh, inspired by oh-my-zsh and vundle
@@ -24,6 +27,8 @@ brew "automake"
 brew "brew-cask-completion"
 # CLI for managing secrets through AWS SSM Parameter Store
 brew "chamber"
+# Cross-platform make
+brew "cmake"
 # Dependency manager for Cocoa projects
 brew "cocoapods"
 # GNU File, Shell, and Text utilities
@@ -32,6 +37,8 @@ brew "coreutils"
 brew "cosign"
 # Tool for interacting with remote images and registries
 brew "crane"
+# Tool for testing and debugging Dependabot update jobs
+brew "dependabot"
 # Tools to work with Android .dex and Java .class files
 brew "dex2jar"
 # Load/unload environment variables based on $PWD
@@ -58,6 +65,8 @@ brew "flyctl"
 brew "fzf"
 # Geospatial Data Abstraction Library
 brew "gdal"
+# Interpreter for PostScript and PDF
+brew "ghostscript"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -70,18 +79,22 @@ brew "git-lfs"
 brew "glib"
 # dot visualization tool
 brew "graphviz"
+# Allows you to manage your stacked changes and submit them for review on GitHub
+brew "withgraphite/tap/graphite"
 # Next generation open source RPC library and framework
 brew "grpc"
 # Kubernetes package manager
 brew "helm"
+# Client library for huggingface.co hub
+brew "hf"
 # Add GitHub support to git on the command-line
 brew "hub"
-# Client library for huggingface.co hub
-brew "huggingface-cli"
 # Get events and tasks from the macOS calendar database
 brew "ical-buddy"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
+# C-language implementation of Javascript Object Signing and Encryption
+brew "jose"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # JSON Schema CLI
@@ -110,6 +123,10 @@ brew "minikube"
 brew "minio"
 # Client for Minio
 brew "minio-mc"
+# Generate clients, server & docs from an OpenAPI spec (v2, v3)
+brew "openapi-generator"
+# OCI Registry As Storage
+brew "oras"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
 # Execute binaries from Python packages in isolated environments
@@ -136,6 +153,8 @@ brew "ruff"
 brew "saml2aws"
 # Python 2 and 3 compatibility utilities
 brew "six", link: false
+# Easiest, most secure way to use WireGuard and 2FA
+brew "tailscale"
 # Web-based viewer for Python profiler output
 brew "snakeviz"
 # Version control system designed to be a better CVS
@@ -160,12 +179,16 @@ brew "uv"
 brew "vercel-cli"
 # Tool to create, transform and attest VEX metadata
 brew "vexctl"
+# Tool for creating isolated virtual python environments
+brew "virtualenv"
 # Modular, composable client/server abstractions framework
 brew "wangle"
 # Watch files and take action when they change
 brew "watchman"
 # JavaScript package manager
 brew "yarn"
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
+brew "yq"
 # General-purpose lossless data-compression library
 brew "zlib"
 
@@ -207,10 +230,10 @@ cask "font-open-sans"
 cask "font-roboto"
 # Desktop client for GitHub repositories
 cask "github"
+# Set of tools to manage resources and applications hosted on Google Cloud
+cask "gcloud-cli"
 # Web browser
 cask "google-chrome"
-# Set of tools to manage resources and applications hosted on Google Cloud
-cask "google-cloud-sdk"
 # Tool to optimize images to a smaller size
 cask "imageoptim"
 # Terminal emulator as alternative to Apple's Terminal app
@@ -222,7 +245,9 @@ cask "obsidian"
 # Replacement for Docker Desktop
 cask "orbstack"
 # App wrapper for Postgres
-cask "postgres-unofficial"
+cask "postgres-app"
+# Save articles to read, highlight key content, and organise notes for review
+cask "reader"
 # System wide Slack style Emoji picker
 cask "rocket"
 # VPN client for secure internet access and private browsing
@@ -245,10 +270,10 @@ mas "1Password for Safari", id: 1569813296
 mas "AdGuard for Safari", id: 1440147259
 # Browser management tool
 mas "BrowserFairy", id: 1499080593
+# Contacts app
+mas "Cardhop", id: 1290358394
 # Docs and notes editor
 mas "Craft", id: 1487937127
-# Auto convert websites to dark mode in Safari
-mas "Dark Mode for Safari", id: 1397180934
 # Analyze and recover disk space
 mas "DaisyDisk", id: 411643860
 # Calendar software
@@ -259,12 +284,18 @@ mas "iConvert Icons", id: 515197296
 mas "iStatistica", id: 1025822138
 # Simple JSON viewer for Safari
 mas "JSONPeep", id: 1458969831
+# Dark Mode for Safari
+mas "Noir", id: 1592917505
 # Clipboard manager
 mas "Paste", id: 967805235
 # App wrapper for Redis
 mas "Redis Server", id: 972359186
+# Save articles from Safari to Readwise Reader
+mas "Save to Reader", id: 1640236961
 # Slack app
 mas "Slack", id: 803453959
+# Manage devices on your Tailscale network
+mas "Tailscale", id: 1475387142
 # Apple developer IDE
 mas "Xcode", id: 497799835
 # Apple beta testing app
