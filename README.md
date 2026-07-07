@@ -24,8 +24,8 @@ suggested in [this article][1].
 	- `./link.sh`
 9. Setup asdf and install defaults
 	- `./setup.asdf.sh`
-10. Register R notebook kernel
-	- `Rscript ./setup.r`
+10. Install Cursor extensions from `cursor/extensions.txt`
+	- `./cursor/setup-extensions.sh`
 11. Load Dash preferences from `~/Repos/_configs/dash/`
 	![Dash Preferences > General > Set Up Syncing](./ressources/dash_load_prefs.png)
 
@@ -44,7 +44,7 @@ This contains the following configs:
 - fishconfig
 - fishfunctions
 - asdf
-- cursor (CLI & IDE)
+- cursor (CLI & IDE, including `cursor/extensions.txt` for installed extensions)
 - claude
 - zed
 
@@ -63,6 +63,14 @@ CONTEXT7_API_KEY=your-key-here
 ```
 Then run `./link.sh`. If `.env` is missing or a variable is unset, the generated file will contain 
 an empty placeholder instead.
+
+### Cursor extensions
+
+`cursor/extensions.txt` tracks installed Cursor extensions by ID (one per line, unpinned). Run
+`./cursor/setup-extensions.sh` to install everything in the list; it only installs, it never
+uninstalls extensions that aren't listed. After installing or removing an extension, run
+`./cursor/export-extensions.sh` to refresh the list from your currently installed extensions, then
+commit the change.
 
 This helps setup the following tools:
 - [iTerm 2](https://iterm2.com)
