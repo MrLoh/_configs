@@ -255,6 +255,8 @@ cask "sourcemeta/apps/jsonschema"
 cask "kiro"
 # App to manage software development and track bugs
 cask "linear"
+# Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok"
 # App to write, plan, collaborate, and get organized
 cask "notion"
 # Knowledge base that works on top of a local folder of plain text Markdown files

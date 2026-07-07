@@ -668,5 +668,13 @@
         "longitude": -122.4324,
         "isDisabled": true
     },
-    "cursor.composer.editorConversationDensity": "detailed"
+    "cursor.composer.editorConversationDensity": "detailed",
+    "yaml.disableSchemaDetection": [
+        "**/.github/workflows/*.yml",
+        "**/.github/workflows/*.yaml",
+        "**/.gitea/workflows/*.yml",
+        "**/.gitea/workflows/*.yaml",
+        "**/.forgejo/workflows/*.yml",
+        "**/.forgejo/workflows/*.yaml"
+    ]
 }
